@@ -448,196 +448,225 @@ void buzzWithDelay(unsigned char sensor, int note, int time) {
 
 int main(void)
 {
-  // --------------DO NOT TOUCH!!------------------------ //
-  // NEVER!!! EVER!!!
+    // --------------DO NOT TOUCH!!------------------------ //
+    // NEVER!!! EVER!!!
 
-  /* System Clocks Configuration */
-  RCC_Configuration();
+    init_config();
 
-  /* NVIC configuration */
-  NVIC_Configuration();
+    // -----------------UNTIL HERE------------------------- //
 
-  /* GPIO configuration */
-  GPIO_Configuration();
-
-  SysTick_Configuration();
-
-  Timer_Configuration();
-
-  dxl_initialize( 0, 1 );
-  USART_Configuration(USART_PC, Baudrate_PC);
-  // -----------------UNTIL HERE------------------------- //
-
-  // here, touch all u like :-)
-  //
-  int thresholdInfrared = 50 ;
-  // state will define the robot's attitude towards its environment
-  // it implements a state machine
-  // thats why we call it state :-)
-  int state;
+    // here, touch all u like :-)
+    //
+    int thresholdInfrared = 50 ;
+    // state will define the robot's attitude towards its environment
+    // it implements a state machine
+    // thats why we call it state :-)
+    int state;
 
 
-  state= INIT;
-  infiniteTurn(MOTOR_up_left);
-  infiniteTurn(MOTOR_up_right);
-  infiniteTurn(MOTOR_down_left);
-  infiniteTurn(MOTOR_down_right);
-  unsigned char field;
+    state=INIT;
+    infiniteTurn(MOTOR_down_left);
+    infiniteTurn(MOTOR_down_right);
+    unsigned char field;
 
-  //  printf("Resetting motors\n") ;
-  setSpeed(MOTOR_up_left, 0);
-  setSpeed(MOTOR_up_right, 0);
-  setSpeed(MOTOR_down_left, 0);
-  setSpeed(MOTOR_down_right, 0);
+    setSpeed(MOTOR_down_left, 0);
+    setSpeed(MOTOR_down_right, 0);
 
-  // state should equal INIT only at the beginning of each match
+    // state should equal INIT only at the beginning of each match
 
-  while(state!=STOP)
-  {
+    while(state!=STOP)
+    {
 
-     while (state==INIT) {
-       int z = 0;
-     // play some music
-       buzzWithDelay(SENSOR, 22, 250);
-       mDelay(250);
-       buzzWithDelay(SENSOR, 24, 250);
-       buzzWithDelay(SENSOR, 20, 250);
-       mDelay(250);
-       
-       buzzWithDelay(SENSOR, 22, 1000);
-       mDelay(500);
-       buzzWithDelay(SENSOR, 25, 250);
-       mDelay(250);
-       buzzWithDelay(SENSOR, 24, 250);
-       buzzWithDelay(SENSOR, 20, 250);
-       mDelay(250);
-       buzzWithDelay(SENSOR, 22, 1000);
-       mDelay(500);
-       // blink some lights
-       TxDString("blink!!\n") ;
-       for(z=0; z<4; z++)
-       {
-
-          GPIO_SetBits(PORT_LED_POWER, PIN_LED_POWER);
-          GPIO_ResetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
-          mDelay(100);
-
-          GPIO_SetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
-          GPIO_ResetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
-          mDelay(100);
-
-          GPIO_SetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
-          GPIO_ResetBits(PORT_LED_PLAY, PIN_LED_PLAY);
-          mDelay(100);
-
-          GPIO_SetBits(PORT_LED_PLAY, PIN_LED_PLAY);
-          GPIO_ResetBits(PORT_LED_TX, PIN_LED_TX);
-          mDelay(100);
-
-          GPIO_SetBits(PORT_LED_TX, PIN_LED_TX);
-          GPIO_ResetBits(PORT_LED_RX, PIN_LED_RX);
-          mDelay(100);
-
-          GPIO_SetBits(PORT_LED_RX, PIN_LED_RX);
-          GPIO_ResetBits(PORT_LED_AUX, PIN_LED_AUX);
-          mDelay(100);
-
-          GPIO_SetBits(PORT_LED_AUX, PIN_LED_AUX);
-          GPIO_ResetBits(PORT_LED_POWER, PIN_LED_POWER);
-          mDelay(100);
-
-        /* TxDString("lights on...\n") ; */
-        /* lightOn(MOTOR_up_right); */
-         /* lightOn(MOTOR_up_left); */
-         /* lightOn(MOTOR_down_left); */
-         /* lightOn(MOTOR_down_right); */
-	      /* mDelay(2) ; */
-         /* TxDString("lights oFF...\n") ; */
-         /* lightOff(MOTOR_up_right); */
-         /* lightOff(MOTOR_up_left); */
-         /* lightOff(MOTOR_down_left); */
-         /* lightOff(MOTOR_down_right); */
-       }
-
-       state=GO_TO_CENTER;
-
-     }
+        while (state==INIT) {
+            // play some music
+            init_music();
+            // blink some lights
+            init_lights();
+            state=GO_TO_CENTER;
+        }
 
 
-     while (state==GO_TO_CENTER) {  // the temporisation should be adapted
+        while (state==GO_TO_CENTER) {  
+            // the temporisation should be adapted
+            GPIO_SetBits(PORT_LED_POWER, PIN_LED_POWER);
+            GPIO_ResetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
+            TxDString("\nGO TO CENTER\n") ;
+            // go straight assuming its a 4_wheeled robot to the center of the field
+            setSpeed(MOTOR_down_left, speed_ini);
+            // /!\ since the motors are set in opposite directions, the speeds should
+            //     be opposite for each side
+            setSpeed(MOTOR_down_right, -speed_ini);
+
+            // advance for 3s, maybe adapt...
+            mDelay(3000);
+            state=SEEKING;
+        }
+
+
+
+        // begin the "seeking for an opponent" phase
+        while (state==SEEKING) {
+            // the robot starts spinning around
+            GPIO_SetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
+            GPIO_SetBits(PORT_LED_PLAY, PIN_LED_PLAY);
+            GPIO_ResetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
+            setSpeed(MOTOR_down_left, speed_ini);
+            setSpeed(MOTOR_down_right, speed_ini);
+            centerInfraRed(SENSOR, &field);
+            {
+                TxDString("\nSEEKING SENSOR VALUE") ;
+                TxDByte16(field);
+                TxDString("\n") ;
+            }
+
+        // opponent detection will result in an attitude change
+        if (field >= thresholdInfrared)  // indeed this condition should be explicit
+            state = CHASING;
+
+        }
+
+        // the robot will focus the opponent and try to push him away,
+        // as hard as possible
+        while (state==CHASING) {
+            GPIO_SetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
+            GPIO_ResetBits(PORT_LED_PLAY, PIN_LED_PLAY);
+            mDelay(100);
+            setSpeed(MOTOR_down_left, speed_max);
+            setSpeed(MOTOR_down_right, -speed_max);
+            centerInfraRed(SENSOR, &field);
+            {
+                TxDString("\nCHASING SENSOR VALUE") ;
+                TxDByte16(field);
+                TxDString("\n") ;
+            }
+
+            // if, for whatever reason, the robot does not detect any obstacle anymore
+            // it returns to its seeking opponent phase
+            if (field<thresholdInfrared/2)
+                state=SEEKING;
+        }
+    }
+
+  while (1) {} ;
+  return 0;
+}
+
+/*******************************************************
+*
+*
+*
+*               OUR FUNCTIONS
+*
+*
+*
+********************************************************/
+
+// DO NOT TOUCH
+void init_config() {
+    /* System Clocks Configuration */
+    RCC_Configuration();
+
+    /* NVIC configuration */
+    NVIC_Configuration();
+
+    /* GPIO configuration */
+    GPIO_Configuration();
+
+    SysTick_Configuration();
+
+    Timer_Configuration();
+
+    dxl_initialize( 0, 1 );
+    USART_Configuration(USART_PC, Baudrate_PC);
+}
+
+
+
+// delay ->  
+void init_music() { 
+    buzzWithDelay(SENSOR, 22, 250);
+    mDelay(250);
+    buzzWithDelay(SENSOR, 24, 250);
+    buzzWithDelay(SENSOR, 20, 250);
+    mDelay(250);
+    
+    buzzWithDelay(SENSOR, 22, 1000);
+    mDelay(500);
+    buzzWithDelay(SENSOR, 25, 250);
+    mDelay(250);
+    buzzWithDelay(SENSOR, 24, 250);
+    buzzWithDelay(SENSOR, 20, 250);
+    mDelay(250);
+    buzzWithDelay(SENSOR, 22, 1000);
+    mDelay(500);
+}
+
+
+// delay -> 
+void init_lights() {
+    int z ;
+    for(z = 0; z < 4; z++)
+    {   
+        TxDString("Motor lights on...\n") ;
+        lightOn(MOTOR_down_left);
+        lightOn(MOTOR_down_right);
+
+        TxDString("blink!!\n") ;
         GPIO_SetBits(PORT_LED_POWER, PIN_LED_POWER);
         GPIO_ResetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
         mDelay(100);
-       TxDString("\nGO TO CENTER\n") ;
-       // go straight assuming its a 4_wheeled robot to the center of the field
-       setSpeed(MOTOR_up_left, speed_ini);
-       setSpeed(MOTOR_down_left, speed_ini);
-       // /!\ since the motors are set in opposite directions, the speeds should
-       //     be opposite for each side
-       setSpeed(MOTOR_up_right, -speed_ini);
-       setSpeed(MOTOR_down_right, -speed_ini);
 
-       // advance for 3s, maybe adapt...
-       mDelay(3000);
-       state=SEEKING;
-     }
-
-
-
-     // begin the "seeking for an opponent" phase
-     while (state==SEEKING) {
-       // the robot starts spinning around
         GPIO_SetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
-        GPIO_SetBits(PORT_LED_PLAY, PIN_LED_PLAY);
         GPIO_ResetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
         mDelay(100);
-       setSpeed(MOTOR_up_left, speed_ini);
-       setSpeed(MOTOR_up_right, speed_ini);
-       setSpeed(MOTOR_down_left, speed_ini);
-       setSpeed(MOTOR_down_right, speed_ini);
-       centerInfraRed(SENSOR, &field);
-       {
-	 TxDString("\nSEEKING SENSOR VALUE") ;
-	 TxDByte16(field);
-	 TxDString("\n") ;
-       }
 
-       // opponent detection will result in an attitude change
-       if (field >= thresholdInfrared)  // indeed this condition should be explicit
-         state = CHASING;
-
-     }
-
-    // the robot will focus the opponent and try to push him away,
-    // as hard as possible
-     while (state==CHASING) {
-       GPIO_SetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
+        GPIO_SetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
         GPIO_ResetBits(PORT_LED_PLAY, PIN_LED_PLAY);
         mDelay(100);
-       setSpeed(MOTOR_up_left, speed_max);
-       setSpeed(MOTOR_down_left, speed_max);
-       setSpeed(MOTOR_up_right, -speed_max);
-       setSpeed(MOTOR_down_right, -speed_max);
-       centerInfraRed(SENSOR, &field);
-       { TxDString("\nCHASING SENSOR VALUE") ;
-	 TxDByte16(field);
-	 TxDString("\n") ;
-       }
 
-       // if, for whatever reason, the robot does not detect any obstacle anymore
-       // it returns to its seeking opponent phase
-       if (field<thresholdInfrared/2)
-         state=SEEKING;
+        GPIO_SetBits(PORT_LED_PLAY, PIN_LED_PLAY);
+        GPIO_ResetBits(PORT_LED_TX, PIN_LED_TX);
+        mDelay(100);
 
+        GPIO_SetBits(PORT_LED_TX, PIN_LED_TX);
+        GPIO_ResetBits(PORT_LED_RX, PIN_LED_RX);
+        mDelay(100);
 
-     }
+        GPIO_SetBits(PORT_LED_RX, PIN_LED_RX);
+        GPIO_ResetBits(PORT_LED_AUX, PIN_LED_AUX);
+        mDelay(100);
 
-  }
+        GPIO_SetBits(PORT_LED_AUX, PIN_LED_AUX);
+        GPIO_ResetBits(PORT_LED_POWER, PIN_LED_POWER);
+        mDelay(100);
 
-  while (1) {} ;
-
-  return 0;
+        TxDString("Motor lights oFF...\n") ;
+        lightOff(MOTOR_down_left);
+        lightOff(MOTOR_down_right);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//************************************************
+//                  END
+//************************************************
+
 
 // --------------DO NOT TOUCH!!------------------------ //
 // NEVER!!! EVER!!!
