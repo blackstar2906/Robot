@@ -498,10 +498,21 @@ int main(void)
      while (state==INIT) {
        int z = 0;
      // play some music
-       buzzWithDelay(SENSOR, 30, 500);
-       buzzWithDelay(SENSOR, 40, 200);
-       buzzWithDelay(SENSOR, 50, 200);
-
+       buzzWithDelay(SENSOR, 22, 250);
+       mDelay(250);
+       buzzWithDelay(SENSOR, 24, 250);
+       buzzWithDelay(SENSOR, 20, 250);
+       mDelay(250);
+       
+       buzzWithDelay(SENSOR, 22, 1000);
+       mDelay(500);
+       buzzWithDelay(SENSOR, 25, 250);
+       mDelay(250);
+       buzzWithDelay(SENSOR, 24, 250);
+       buzzWithDelay(SENSOR, 20, 250);
+       mDelay(250);
+       buzzWithDelay(SENSOR, 22, 1000);
+       mDelay(500);
        // blink some lights
        TxDString("blink!!\n") ;
        for(z=0; z<4; z++)
