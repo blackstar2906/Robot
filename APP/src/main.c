@@ -315,6 +315,9 @@ void checkLuminosity(unsigned char sensor, unsigned char* info)  {
 void leftInfraRed(unsigned char sensor, unsigned char* info) {
   *info = dxl_read_byte(sensor, AXS1_CTAB_ID_LeftIRSensorData) ;
   int result =  dxl_get_result();
+  TxDString("value is  ");
+       TxDWord16(*info);
+       TxDString("!!!\n");
   if( result != COMM_RXSUCCESS	)
     {
       TxDString("\nproblem, code=");
@@ -472,7 +475,7 @@ int main(void)
     // here, touch all u like :-)
     //
     int thresholdInfrared = 50;
-    int thresholdLight = 50;
+    int thresholdLight = 250;
     // state will define the robot's attitude towards its environment
     // it implements a state machine
     // thats why we call it state :-)
@@ -522,7 +525,7 @@ int main(void)
 
         while (state==GO_TO_CENTER) {  
             // the temporisation should be adapted
-            GPIO_SetBits(PORT_LED_POWER, PIN_LED_POWER);
+            switch_off_lights();
             GPIO_ResetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
             move_forward(speed_ini);
 
@@ -540,8 +543,7 @@ int main(void)
             }
 
             // the robot starts spinning around
-            GPIO_SetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
-            GPIO_SetBits(PORT_LED_PLAY, PIN_LED_PLAY);
+            switch_off_lights();
             GPIO_ResetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
             turn_right();
             centerInfraRed(SENSOR, &field);
@@ -557,7 +559,7 @@ int main(void)
         // the robot will focus the opponent and try to push him away,
         // as hard as possible
         while (state==CHASING) {
-            GPIO_SetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
+            GPIO_ResetBits(PORT_LED_TX, PIN_LED_TX);
             GPIO_ResetBits(PORT_LED_PLAY, PIN_LED_PLAY);
             move_forward(speed_max);
             centerInfraRed(SENSOR, &field);
@@ -711,6 +713,21 @@ void init_lights() {
 }
 
 
+void switch_off_lights() {
+    lightOff(MOTOR_down_left);
+    lightOff(MOTOR_down_right);
+
+    GPIO_SetBits(PORT_LED_POWER, PIN_LED_POWER);
+    GPIO_SetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
+    GPIO_SetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
+    GPIO_SetBits(PORT_LED_PLAY, PIN_LED_PLAY);
+    GPIO_SetBits(PORT_LED_TX, PIN_LED_TX);
+    GPIO_SetBits(PORT_LED_RX, PIN_LED_RX);
+    GPIO_SetBits(PORT_LED_AUX, PIN_LED_AUX);
+}
+
+
+
 
 // --------
 // MOVEMENT
@@ -721,6 +738,10 @@ void init_lights() {
 void move_forward(int speed) {
     setSpeed(MOTOR_down_left, speed);
     setSpeed(MOTOR_down_right, -speed);
+}
+
+void move_backward(int speed) {
+    move_forward(-speed);
 }
 
 void turn_right() {
@@ -784,10 +805,13 @@ void down_to_upping(int* shovel_state, int out_Angle1, int out_Angle2){
 
 void detectlb(int thresholdLight, unsigned char *leftfield){
     leftInfraRed(SENSOR, leftfield);
-    if (leftfield >= thresholdLight){
-        setSpeed(MOTOR_down_left, speed_max);
-        setSpeed(MOTOR_down_right, speed_max);
-        mDelay(2000);
+    if (*leftfield >= thresholdLight){
+        switch_off_lights();
+        GPIO_ResetBits(PORT_LED_TX, PIN_LED_TX);
+        move_backward(speed_max);
+        mDelay(1000);
+        turn_right();
+        mDelay(3000);
     }
 }
 
