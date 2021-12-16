@@ -474,7 +474,7 @@ int main(void)
 
     // here, touch all u like :-)
     //
-    int thresholdInfrared = 50;
+    int thresholdInfrared = 25;
     int thresholdLight = 250;
     // state will define the robot's attitude towards its environment
     // it implements a state machine
