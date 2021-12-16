@@ -527,9 +527,13 @@ int main(void)
             // the temporisation should be adapted
             switch_off_lights();
             GPIO_ResetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
+            turn_right();
+            mDelay(1500);
             move_forward(speed_ini);
-
-            // advance for 3s, maybe adapt...
+            mDelay(2000);
+            turn_left();
+            mDelay(1500);
+            move_forward(speed_max);
             mDelay(1500);
             state=SEEKING;
         }
@@ -753,8 +757,8 @@ void turn_right() {
 }
 
 void turn_left() {
-    setSpeed(MOTOR_down_left, speed_turn);
-    setSpeed(MOTOR_down_right, speed_turn);
+    setSpeed(MOTOR_down_left, -speed_turn);
+    setSpeed(MOTOR_down_right, -speed_turn);
 }
 
 
