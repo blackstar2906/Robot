@@ -546,6 +546,9 @@ int main(void)
             switch_off_lights();
             GPIO_ResetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
             turn_right();
+            mDelay(750);
+            move_forward(speed_ini);
+            mDelay(1000);
             centerInfraRed(SENSOR, &field);
 
             // detect border
