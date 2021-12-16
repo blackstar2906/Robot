@@ -2744,7 +2744,7 @@ void move_backward(int speed) {
  8003da2:	f7ff feb9 	bl	8003b18 <mDelay>
         turn_right();
  8003da6:	f7ff fbbe 	bl	8003526 <turn_right>
-        mDelay(3000);
+        mDelay(1000);
     }
 }
  8003daa:	e8bd 4038 	ldmia.w	sp!, {r3, r4, r5, lr}
@@ -2753,8 +2753,8 @@ void move_backward(int speed) {
         move_backward(speed_max);
         mDelay(1000);
         turn_right();
-        mDelay(3000);
- 8003dae:	f640 30b8 	movw	r0, #3000	; 0xbb8
+        mDelay(1000);
+ 8003dae:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
  8003db2:	f7ff beb1 	b.w	8003b18 <mDelay>
  8003db6:	bd38      	pop	{r3, r4, r5, pc}
  8003db8:	40011000 	andmi	r1, r1, r0
@@ -14258,7 +14258,7 @@ int main(void)
             // opponent detection will result in an attitude change
             if (field >= thresholdInfrared)  // indeed this condition should be explicit
  800608a:	f89d 3002 	ldrb.w	r3, [sp, #2]
- 800608e:	2b31      	cmp	r3, #49	; 0x31
+ 800608e:	2b09      	cmp	r3, #9
  8006090:	dddf      	ble.n	8006052 <main+0x8a>
         }
 
@@ -14347,7 +14347,7 @@ void down_to_upping(int* shovel_state, int out_Angle1, int out_Angle2){
             if (field<thresholdInfrared/2)
  8006102:	f89d 3002 	ldrb.w	r3, [sp, #2]
                 state=SEEKING;
- 8006106:	2b18      	cmp	r3, #24
+ 8006106:	2b04      	cmp	r3, #4
  8006108:	bfcc      	ite	gt
  800610a:	2303      	movgt	r3, #3
  800610c:	2302      	movle	r3, #2
@@ -17297,7 +17297,7 @@ Disassembly of section .debug_info:
     2798:	08003db6 	stmdaeq	r0, {r1, r2, r4, r5, r7, r8, sl, fp, ip, sp}
     279c:	00001ff2 	strdeq	r1, [r0], -r2
     27a0:	03500117 	cmpeq	r0, #-1073741819	; 0xc0000005
-    27a4:	000bb80a 	andeq	fp, fp, sl, lsl #16
+    27a4:	0003e80a 	andeq	lr, r3, sl, lsl #16
     27a8:	3d841a00 	vstrcc	s2, [r4]
     27ac:	181b0800 	ldmdane	fp, {fp}
     27b0:	01170000 	tsteq	r7, r0
@@ -17430,7 +17430,7 @@ Disassembly of section .debug_info:
     29ac:	3d30002b 	ldccc	0, cr0, [r0, #-172]!	; 0xffffff54
     29b0:	0100000a 	tsteq	r0, sl
     29b4:	069101dd 			; <UNDEFINED> instruction: 0x069101dd
-    29b8:	30320000 	eorscc	r0, r2, r0
+    29b8:	300a0000 	andcc	r0, sl, r0
     29bc:	00000b2b 	andeq	r0, r0, fp, lsr #22
     29c0:	9101de01 	tstls	r1, r1, lsl #28
     29c4:	fa000006 	blx	29e4 <__Stack_Size+0x25e4>

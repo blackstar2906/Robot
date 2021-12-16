@@ -474,7 +474,7 @@ int main(void)
 
     // here, touch all u like :-)
     //
-    int thresholdInfrared = 25;
+    int thresholdInfrared = 10;
     int thresholdLight = 250;
     // state will define the robot's attitude towards its environment
     // it implements a state machine
@@ -811,7 +811,7 @@ void detectlb(int thresholdLight, unsigned char *leftfield){
         move_backward(speed_max);
         mDelay(1000);
         turn_right();
-        mDelay(3000);
+        mDelay(1000);
     }
 }
 
