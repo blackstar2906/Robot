@@ -128,8 +128,22 @@ byte CheckTimeOut(void);
 #define STOP -1
 
 
-#define speed_ini 400
-#define speed_max 512
+//#define speed_ini 400
+//#define speed_max 512
+#define speed_turn 350
+#define speed_ini 700
+#define speed_max 1023
+
+
+#define shovel_up 1
+#define shovel_down 0
+#define shovel_upping 2
+#define shovel_lowering 3
+#define shovelthreshold 10
+
+
+
+
 
 
 //////////////////////////////////////
@@ -457,7 +471,8 @@ int main(void)
 
     // here, touch all u like :-)
     //
-    int thresholdInfrared = 50 ;
+    int thresholdInfrared = 50;
+    int thresholdLight = 50;
     // state will define the robot's attitude towards its environment
     // it implements a state machine
     // thats why we call it state :-)
@@ -467,13 +482,24 @@ int main(void)
     state=INIT;
     infiniteTurn(MOTOR_down_left);
     infiniteTurn(MOTOR_down_right);
+    setSpeed(MOTOR_down_left, speed_ini);
+    setSpeed(MOTOR_down_right, speed_ini);
     unsigned char field;
+    unsigned char leftfield;
 
     setSpeed(MOTOR_down_left, 0);
     setSpeed(MOTOR_down_right, 0);
 
-    // state should equal INIT only at the beginning of each match
+    //OUR GLOBAL VARIABLE
+    int shovel_state = shovel_down;
+    unsigned int init_Angle1;
+    unsigned int init_Angle2;
+    getAngle(MOTOR_up_left, &init_Angle1);
+    getAngle(MOTOR_up_right, &init_Angle2);
+    int out_Angle1;
+    int out_Angle2;
 
+    // state should equal INIT only at the beginning of each match
     while(state!=STOP)
     {
 
@@ -482,6 +508,14 @@ int main(void)
             init_music();
             // blink some lights
             init_lights();
+
+            unsigned int init_Angle1;
+            unsigned int init_Angle2;
+            getAngle(MOTOR_up_left, &init_Angle1);    //angles bas
+            getAngle(MOTOR_up_right, &init_Angle2);
+            out_Angle1 = init_Angle1-150;         //angles hauts
+            out_Angle2 = init_Angle2+150;
+
             state=GO_TO_CENTER;
         }
 
@@ -490,15 +524,10 @@ int main(void)
             // the temporisation should be adapted
             GPIO_SetBits(PORT_LED_POWER, PIN_LED_POWER);
             GPIO_ResetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
-            TxDString("\nGO TO CENTER\n") ;
-            // go straight assuming its a 4_wheeled robot to the center of the field
-            setSpeed(MOTOR_down_left, speed_ini);
-            // /!\ since the motors are set in opposite directions, the speeds should
-            //     be opposite for each side
-            setSpeed(MOTOR_down_right, -speed_ini);
+            move_forward(speed_ini);
 
             // advance for 3s, maybe adapt...
-            mDelay(3000);
+            mDelay(1500);
             state=SEEKING;
         }
 
@@ -506,23 +535,23 @@ int main(void)
 
         // begin the "seeking for an opponent" phase
         while (state==SEEKING) {
+            if(shovel_state == shovel_up || shovel_state == shovel_upping){
+                up_to_lowering(&shovel_state, init_Angle1, init_Angle2);
+            }
+
             // the robot starts spinning around
             GPIO_SetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
             GPIO_SetBits(PORT_LED_PLAY, PIN_LED_PLAY);
             GPIO_ResetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
-            setSpeed(MOTOR_down_left, speed_ini);
-            setSpeed(MOTOR_down_right, speed_ini);
+            turn_right();
             centerInfraRed(SENSOR, &field);
-            {
-                TxDString("\nSEEKING SENSOR VALUE") ;
-                TxDByte16(field);
-                TxDString("\n") ;
-            }
 
-        // opponent detection will result in an attitude change
-        if (field >= thresholdInfrared)  // indeed this condition should be explicit
-            state = CHASING;
+            // detect border
+            detectlb(thresholdLight, &leftfield);
 
+            // opponent detection will result in an attitude change
+            if (field >= thresholdInfrared)  // indeed this condition should be explicit
+                state = CHASING;
         }
 
         // the robot will focus the opponent and try to push him away,
@@ -530,15 +559,29 @@ int main(void)
         while (state==CHASING) {
             GPIO_SetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
             GPIO_ResetBits(PORT_LED_PLAY, PIN_LED_PLAY);
-            mDelay(100);
-            setSpeed(MOTOR_down_left, speed_max);
-            setSpeed(MOTOR_down_right, -speed_max);
+            move_forward(speed_max);
             centerInfraRed(SENSOR, &field);
-            {
-                TxDString("\nCHASING SENSOR VALUE") ;
-                TxDByte16(field);
-                TxDString("\n") ;
+            
+            // shovel
+            if(shovel_state == shovel_down){
+                down_to_upping(&shovel_state, out_Angle1, out_Angle2);
             }
+
+            if(shovel_state == shovel_upping ){
+                upping_to_up(&shovel_state, out_Angle1, out_Angle2);
+            }
+
+
+            if(shovel_state == shovel_up){
+                up_to_lowering(&shovel_state, init_Angle1, init_Angle2);
+            }
+
+            if(shovel_state == shovel_lowering){
+                lowering_to_low(&shovel_state, init_Angle1, init_Angle2);
+            }
+
+            // detect border
+            detectlb(thresholdLight, &leftfield);
 
             // if, for whatever reason, the robot does not detect any obstacle anymore
             // it returns to its seeking opponent phase
@@ -561,6 +604,14 @@ int main(void)
 *
 ********************************************************/
 
+
+
+// --------------
+// INITIALISATION
+// --------------
+
+
+
 // DO NOT TOUCH
 void init_config() {
     /* System Clocks Configuration */
@@ -581,31 +632,44 @@ void init_config() {
 }
 
 
+// delay -> 1,5s
+void init_music() {                  //Totally spies
 
-// delay ->  
-void init_music() { 
-    buzzWithDelay(SENSOR, 22, 250);
-    mDelay(250);
-    buzzWithDelay(SENSOR, 24, 250);
-    buzzWithDelay(SENSOR, 20, 250);
-    mDelay(250);
+    buzzWithDelay(SENSOR, 19, 125);
+    buzzWithDelay(SENSOR, 16, 125);
+    buzzWithDelay(SENSOR, 16, 250);
+    mDelay(500);
     
-    buzzWithDelay(SENSOR, 22, 1000);
-    mDelay(500);
-    buzzWithDelay(SENSOR, 25, 250);
-    mDelay(250);
-    buzzWithDelay(SENSOR, 24, 250);
-    buzzWithDelay(SENSOR, 20, 250);
-    mDelay(250);
-    buzzWithDelay(SENSOR, 22, 1000);
-    mDelay(500);
+    buzzWithDelay(SENSOR, 14, 125);
+    buzzWithDelay(SENSOR, 16, 125);
+    buzzWithDelay(SENSOR, 19, 250);
+}
+
+// delay -> 2,5s
+void init_music2(){                   //John cena
+    buzzWithDelay(SENSOR, 22, 125);
+    mDelay(125);
+    buzzWithDelay(SENSOR, 24, 125);
+    buzzWithDelay(SENSOR, 20, 125);
+    mDelay(125);
+    
+    // trop long les sons ?
+    buzzWithDelay(SENSOR, 22, 500);
+    mDelay(125);
+    buzzWithDelay(SENSOR, 25, 125);
+    mDelay(125);
+    buzzWithDelay(SENSOR, 24, 125);
+    buzzWithDelay(SENSOR, 20, 125);
+    mDelay(125);
+    buzzWithDelay(SENSOR, 22, 500);
+    mDelay(125);
 }
 
 
-// delay -> 
+// delay -> 1,4s
 void init_lights() {
     int z ;
-    for(z = 0; z < 4; z++)
+    for(z = 0; z < 2; z++)
     {   
         TxDString("Motor lights on...\n") ;
         lightOn(MOTOR_down_left);
@@ -648,13 +712,84 @@ void init_lights() {
 
 
 
+// --------
+// MOVEMENT
+// --------
 
 
 
+void move_forward(int speed) {
+    setSpeed(MOTOR_down_left, speed);
+    setSpeed(MOTOR_down_right, -speed);
+}
+
+void turn_right() {
+    setSpeed(MOTOR_down_left, speed_turn);
+    setSpeed(MOTOR_down_right, speed_turn);
+}
+
+void turn_left() {
+    setSpeed(MOTOR_down_left, speed_turn);
+    setSpeed(MOTOR_down_right, speed_turn);
+}
 
 
 
+// ------
+// SHOVEL
+// ------
 
+
+
+void lifting(int out_Angle1, int out_Angle2){
+    setAngle(MOTOR_up_left, out_Angle1, 100);
+    setAngle(MOTOR_up_right, out_Angle2, 100);
+}
+
+void upping_to_up(int* shovel_state, int out_Angle1, int out_Angle2){
+    int current_Angle1;
+    int current_Angle2;
+    getAngle(MOTOR_up_right,&current_Angle2);
+    getAngle(MOTOR_up_left, &current_Angle1);
+    if(abs(current_Angle1-out_Angle1) <= shovelthreshold  && abs(current_Angle2-out_Angle2) <= shovelthreshold)
+        *shovel_state = shovel_up;
+}
+
+void up_to_lowering(int* shovel_state, unsigned int init_Angle1, unsigned int init_Angle2){
+    setSpeed(MOTOR_down_left, speed_ini);
+    setSpeed(MOTOR_down_right, -speed_ini);
+    mDelay(1000);
+    lifting(init_Angle1, init_Angle2);
+    *shovel_state = shovel_lowering;
+}
+
+void lowering_to_low(int* shovel_state, unsigned int init_Angle1, unsigned int init_Angle2){
+    int current_Angle1;
+    int current_Angle2;
+    getAngle(MOTOR_up_right,&current_Angle2);
+    getAngle(MOTOR_up_left, &current_Angle1);
+    if( abs(current_Angle1-init_Angle1) <= shovelthreshold && abs(current_Angle2-init_Angle2) <= shovelthreshold)
+        *shovel_state = shovel_down;
+}
+
+void down_to_upping(int* shovel_state, int out_Angle1, int out_Angle2){
+    lifting(out_Angle1, out_Angle2);
+    *shovel_state = shovel_upping;
+}
+
+
+// -----------------
+// CONTOUR DETECTION
+// -----------------
+
+void detectlb(int thresholdLight, unsigned char *leftfield){
+    leftInfraRed(SENSOR, leftfield);
+    if (leftfield >= thresholdLight){
+        setSpeed(MOTOR_down_left, speed_max);
+        setSpeed(MOTOR_down_right, speed_max);
+        mDelay(2000);
+    }
+}
 
 
 
