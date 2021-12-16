@@ -529,16 +529,12 @@ int main(void)
             GPIO_ResetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
             turn_right();
             mDelay(1500);
-            move_forward(speed_ini);
-            mDelay(2000);
-            turn_left();
-            mDelay(2000);
             move_forward(speed_max);
-            mDelay(1500);
+            mDelay(3000);
             turn_left();
-            mDelay(2000);
+            mDelay(2200);
             move_forward(speed_max);
-            mDelay(1500);
+            mDelay(2500);
             state=SEEKING;
         }
 
@@ -553,7 +549,7 @@ int main(void)
             // the robot starts spinning around
             switch_off_lights();
             GPIO_ResetBits(PORT_LED_PROGRAM, PIN_LED_PROGRAM);
-            turn_right();
+            turn_left();
             mDelay(750);
             move_forward(speed_ini);
             mDelay(1000);
@@ -821,7 +817,7 @@ void detectlb(int thresholdLight, unsigned char *leftfield){
         GPIO_ResetBits(PORT_LED_TX, PIN_LED_TX);
         move_backward(speed_max);
         mDelay(1000);
-        turn_right();
+        turn_left();
         mDelay(1000);
     }
 }

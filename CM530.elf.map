@@ -324,7 +324,7 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
  *(.flashtext)
                 0x08003134                . = ALIGN (0x4)
 
-.text           0x08003134     0x32b4
+.text           0x08003134     0x32a0
                 0x08003134                . = ALIGN (0x4)
  *(.text)
  .text          0x08003134      0xd60 APP/src/main.o
@@ -753,36 +753,36 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
  .text          0x08005f78       0x50 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
                 0x08005f78                Reset_Handler
  *(.text.*)
- .text.startup  0x08005fc8      0x1a8 APP/src/main.o
+ .text.startup  0x08005fc8      0x194 APP/src/main.o
                 0x08005fc8                main
  *(.rodata)
- .rodata        0x08006170       0x14 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .rodata        0x0800615c       0x14 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
  *(.rodata*)
  .rodata.str1.1
-                0x08006184      0x262 APP/src/main.o
+                0x08006170      0x262 APP/src/main.o
                                 0x271 (size before relaxing)
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
-                0x080063e8                . = ALIGN (0x4)
- *fill*         0x080063e6        0x2 
-                0x080063e8                _etext = .
-                0x080063e8                _sidata = _etext
+                0x080063d4                . = ALIGN (0x4)
+ *fill*         0x080063d2        0x2 
+                0x080063d4                _etext = .
+                0x080063d4                _sidata = _etext
 
-.vfp11_veneer   0x080063e8        0x0
+.vfp11_veneer   0x080063d4        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x080063e8        0x0
+.v4_bx          0x080063d4        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x080063e8        0x0
+.iplt           0x080063d4        0x0
  .iplt          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
 
-.rel.dyn        0x080063e8        0x0
+.rel.dyn        0x080063d4        0x0
  .rel.iplt      0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
 
-.data           0x20000000       0x18 load address 0x080063e8
+.data           0x20000000       0x18 load address 0x080063d4
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -798,10 +798,10 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
                 0x20000018                . = ALIGN (0x4)
                 0x20000018                _edata = .
 
-.igot.plt       0x20000018        0x0 load address 0x08006400
+.igot.plt       0x20000018        0x0 load address 0x080063ec
  .igot.plt      0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
 
-.bss            0x20000018      0x204 load address 0x08006400
+.bss            0x20000018      0x204 load address 0x080063ec
                 0x20000018                . = ALIGN (0x4)
                 0x20000018                _sbss = .
  *(.bss)
@@ -830,7 +830,7 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
                 0x2000021c                PROVIDE (end, _ebss)
                 0x2000021c                PROVIDE (_end, _ebss)
 
-._usrstack      0x2000021c      0x100 load address 0x08006604
+._usrstack      0x2000021c      0x100 load address 0x080065f0
                 0x2000021c                . = ALIGN (0x4)
                 0x2000021c                _susrstack = .
                 0x2000031c                . = (. + _Minimum_Stack_Size)
@@ -982,22 +982,22 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x96f4
+.debug_info     0x00000000     0x96c1
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x35d2 APP/src/main.o
- .debug_info    0x000035d2      0x584 APP/src/stm32f10x_it.o
- .debug_info    0x00003b56      0x2d8 APP/src/dxl_hal.o
- .debug_info    0x00003e2e      0x734 APP/src/dynamixel.o
- .debug_info    0x00004562      0x8bb stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
- .debug_info    0x00004e1d      0x747 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
- .debug_info    0x00005564      0x968 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
- .debug_info    0x00005ecc      0x2c6 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
- .debug_info    0x00006192      0x871 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
- .debug_info    0x00006a03      0x20b stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
- .debug_info    0x00006c0e     0x1f42 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
- .debug_info    0x00008b50      0xa2c stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
- .debug_info    0x0000957c       0x65 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
- .debug_info    0x000095e1      0x113 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_info    0x00000000     0x359f APP/src/main.o
+ .debug_info    0x0000359f      0x584 APP/src/stm32f10x_it.o
+ .debug_info    0x00003b23      0x2d8 APP/src/dxl_hal.o
+ .debug_info    0x00003dfb      0x734 APP/src/dynamixel.o
+ .debug_info    0x0000452f      0x8bb stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_info    0x00004dea      0x747 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_info    0x00005531      0x968 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_info    0x00005e99      0x2c6 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_info    0x0000615f      0x871 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_info    0x000069d0      0x20b stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_info    0x00006bdb     0x1f42 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_info    0x00008b1d      0xa2c stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_info    0x00009549       0x65 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .debug_info    0x000095ae      0x113 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 
 .debug_abbrev   0x00000000     0x194e
  *(.debug_abbrev)
@@ -1016,22 +1016,22 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
  .debug_abbrev  0x00001862       0x14 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
  .debug_abbrev  0x00001876       0xd8 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 
-.debug_line     0x00000000     0x1847
+.debug_line     0x00000000     0x1844
  *(.debug_line)
- .debug_line    0x00000000      0x506 APP/src/main.o
- .debug_line    0x00000506      0x129 APP/src/stm32f10x_it.o
- .debug_line    0x0000062f       0x66 APP/src/dxl_hal.o
- .debug_line    0x00000695      0x158 APP/src/dynamixel.o
- .debug_line    0x000007ed      0x20a stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
- .debug_line    0x000009f7      0x182 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
- .debug_line    0x00000b79      0x1d2 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
- .debug_line    0x00000d4b       0xeb stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
- .debug_line    0x00000e36      0x1a0 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
- .debug_line    0x00000fd6       0xb5 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
- .debug_line    0x0000108b      0x4db stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
- .debug_line    0x00001566      0x1da stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
- .debug_line    0x00001740       0xa4 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
- .debug_line    0x000017e4       0x63 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_line    0x00000000      0x503 APP/src/main.o
+ .debug_line    0x00000503      0x129 APP/src/stm32f10x_it.o
+ .debug_line    0x0000062c       0x66 APP/src/dxl_hal.o
+ .debug_line    0x00000692      0x158 APP/src/dynamixel.o
+ .debug_line    0x000007ea      0x20a stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_line    0x000009f4      0x182 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_line    0x00000b76      0x1d2 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_line    0x00000d48       0xeb stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_line    0x00000e33      0x1a0 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_line    0x00000fd3       0xb5 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_line    0x00001088      0x4db stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_line    0x00001563      0x1da stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_line    0x0000173d       0xa4 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .debug_line    0x000017e1       0x63 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 
 .debug_frame    0x00000000     0x1ebc
  *(.debug_frame)
