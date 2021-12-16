@@ -524,7 +524,7 @@ int main(void)
 
 
         while (state==GO_TO_CENTER) {  
-            // the temporisation should be adapted
+            // strategy : attack the opponent by the right side)
             switch_off_lights();
             GPIO_ResetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
             turn_right();
@@ -532,7 +532,11 @@ int main(void)
             move_forward(speed_ini);
             mDelay(2000);
             turn_left();
+            mDelay(2000);
+            move_forward(speed_max);
             mDelay(1500);
+            turn_left();
+            mDelay(2000);
             move_forward(speed_max);
             mDelay(1500);
             state=SEEKING;
