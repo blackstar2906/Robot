@@ -20,48 +20,48 @@ stm32f10x_lib/libstm32.a(cortexm3_macro.o)
                               stm32f10x_lib/libstm32.a(stm32f10x_pwr.o) (__WFI)
 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
                               (Reset_Handler)
-/home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
-                              /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o (exit)
-/home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
-                              /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o) (_global_impure_ptr)
-/home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
-                              /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o (__libc_init_array)
-/home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
-                              /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o (memset)
-/home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
-                              /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o) (__call_exitprocs)
-/home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
-                              /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o) (atexit)
-/home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
-                              /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o) (__libc_fini_array)
-/home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
-                              /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o) (__register_exitproc)
+/home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
+                              /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o (exit)
+/home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+                              /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o) (_global_impure_ptr)
+/home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+                              /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o (__libc_init_array)
+/home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
+                              /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o (memset)
+/home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+                              /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o) (__call_exitprocs)
+/home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
+                              /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o) (atexit)
+/home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
+                              /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o) (__libc_fini_array)
+/home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
+                              /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o) (__register_exitproc)
 
 Discarded input sections
 
- .text          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
- .init          0x00000000        0xc /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
- .fini          0x00000000        0xc /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
+ .text          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
+ .init          0x00000000        0xc /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
+ .fini          0x00000000        0xc /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
  .ARM.attributes
-                0x00000000       0x16 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
- .text          0x00000000       0x98 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
- .data          0x00000000        0x4 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
- .bss           0x00000000       0x1c /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
- .init_array    0x00000000        0x4 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
- .fini_array    0x00000000        0x4 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
- .eh_frame      0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
- .jcr           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+                0x00000000       0x16 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
+ .text          0x00000000       0x98 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+ .data          0x00000000        0x4 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+ .bss           0x00000000       0x1c /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+ .init_array    0x00000000        0x4 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+ .fini_array    0x00000000        0x4 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+ .eh_frame      0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+ .jcr           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
  .ARM.attributes
-                0x00000000       0x30 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
- .text          0x00000000      0x114 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
- .ARM.extab     0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
- .ARM.exidx     0x00000000        0x8 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+                0x00000000       0x30 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+ .text          0x00000000      0x114 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+ .ARM.extab     0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+ .ARM.exidx     0x00000000        0x8 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
  .ARM.attributes
-                0x00000000       0x14 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+                0x00000000       0x14 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
  .data          0x00000000        0x0 APP/src/stm32f10x_it.o
  .bss           0x00000000        0x0 APP/src/stm32f10x_it.o
  .data          0x00000000        0x0 APP/src/dxl_hal.o
@@ -86,90 +86,90 @@ Discarded input sections
  .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
  .data          0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
  .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
- .text          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
- .text.exit     0x00000000       0x34 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
- .debug_frame   0x00000000       0x28 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
+ .text          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x34 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
+ .debug_frame   0x00000000       0x28 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
  .ARM.attributes
-                0x00000000       0x30 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
- .text          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+                0x00000000       0x30 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
+ .text          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
  .data.impure_data
-                0x00000000      0x428 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+                0x00000000      0x428 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
  .data._impure_ptr
-                0x00000000        0x4 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+                0x00000000        0x4 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
  .rodata.str1.4
-                0x00000000        0x2 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+                0x00000000        0x2 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
  .rodata._global_impure_ptr
-                0x00000000        0x4 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+                0x00000000        0x4 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000000       0x30 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
- .text          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+                0x00000000       0x30 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+ .text          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
  .text.__libc_init_array
-                0x00000000       0x80 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
- .debug_frame   0x00000000       0x34 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+                0x00000000       0x80 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+ .debug_frame   0x00000000       0x34 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
  .ARM.attributes
-                0x00000000       0x30 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
- .text          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
- .text.memset   0x00000000       0xf4 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
- .debug_frame   0x00000000       0x30 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
+                0x00000000       0x30 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+ .text          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .text.memset   0x00000000       0xf4 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .debug_frame   0x00000000       0x30 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000000       0x30 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
- .text          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+                0x00000000       0x30 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
+ .text          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
  .text.startup.register_fini
-                0x00000000       0x24 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+                0x00000000       0x24 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
  .init_array.00000
-                0x00000000        0x4 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+                0x00000000        0x4 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
  .text.__call_exitprocs
-                0x00000000      0x16c /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
- .debug_frame   0x00000000       0x68 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+                0x00000000      0x16c /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000000       0x68 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
  .ARM.attributes
-                0x00000000       0x30 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
- .text          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
- .text.atexit   0x00000000       0x20 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
- .debug_frame   0x00000000       0x2c /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
+                0x00000000       0x30 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+ .text          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
+ .text.atexit   0x00000000       0x20 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
+ .debug_frame   0x00000000       0x2c /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
  .ARM.attributes
-                0x00000000       0x30 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
- .text          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
+                0x00000000       0x30 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
+ .text          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
  .text.__libc_fini_array
-                0x00000000       0x48 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
- .debug_frame   0x00000000       0x34 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
+                0x00000000       0x48 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
+ .debug_frame   0x00000000       0x34 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
  .ARM.attributes
-                0x00000000       0x30 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
- .text          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
+                0x00000000       0x30 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
+ .text          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
  .text.__register_exitproc
-                0x00000000       0xe0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
- .debug_frame   0x00000000       0x3c /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
+                0x00000000       0xe0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00000000       0x3c /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
  .ARM.attributes
-                0x00000000       0x30 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
- .text          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
- .eh_frame      0x00000000        0x4 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
- .jcr           0x00000000        0x4 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
+                0x00000000       0x30 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
+ .text          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
+ .eh_frame      0x00000000        0x4 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
+ .jcr           0x00000000        0x4 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
  .ARM.attributes
-                0x00000000       0x30 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
- .text          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
- .data          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
- .bss           0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
- .init          0x00000000        0xc /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
- .fini          0x00000000        0xc /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
+                0x00000000       0x30 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
+ .text          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
+ .data          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
+ .bss           0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
+ .init          0x00000000        0xc /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
+ .fini          0x00000000        0xc /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
  .ARM.attributes
-                0x00000000       0x18 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
+                0x00000000       0x18 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
 
 Memory Configuration
 
@@ -185,20 +185,20 @@ EXTMEMB3         0x00000000         0x00000000         xr
 
 Linker script and memory map
 
-LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
-LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
-LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+LOAD /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
+LOAD /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+LOAD /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
 LOAD APP/src/main.o
 LOAD APP/src/stm32f10x_it.o
 LOAD APP/src/dxl_hal.o
 LOAD APP/src/dynamixel.o
 LOAD stm32f10x_lib/libstm32.a
 START GROUP
-LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/libgcc.a
-LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a
+LOAD /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/libgcc.a
+LOAD /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a
 END GROUP
-LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
-LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
+LOAD /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtend.o
+LOAD /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtn.o
                 0x00000400                __Stack_Size = 0x400
                 0x00000400                PROVIDE (_Stack_Size, __Stack_Size)
                 0x2000fc00                __Stack_Init = (_estack - __Stack_Size)
@@ -324,10 +324,10 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
  *(.flashtext)
                 0x08003134                . = ALIGN (0x4)
 
-.text           0x08003134     0x32a0
+.text           0x08003134     0x329c
                 0x08003134                . = ALIGN (0x4)
  *(.text)
- .text          0x08003134      0xd60 APP/src/main.o
+ .text          0x08003134      0xd5c APP/src/main.o
                 0x08003134                RCC_Configuration
                 0x080031b8                NVIC_Configuration
                 0x08003206                GPIO_Configuration
@@ -378,411 +378,411 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
                 0x08003b18                mDelay
                 0x08003b48                buzzWithDelay
                 0x08003b7a                init_music
-                0x08003bc4                init_music2
-                0x08003c42                init_lights
-                0x08003d44                up_to_lowering
-                0x08003d78                detectlb
-                0x08003dc0                USART_Configuration
-                0x08003e3c                init_config
-                0x08003e6c                USART1_Configuration
-                0x08003e74                StartDiscount
-                0x08003e80                CheckTimeOut
- .text          0x08003e94       0x90 APP/src/stm32f10x_it.o
-                0x08003e94                NMIException
-                0x08003e96                HardFaultException
-                0x08003e98                MemManageException
-                0x08003e9a                BusFaultException
-                0x08003e9c                UsageFaultException
-                0x08003e9e                DebugMonitor
-                0x08003ea0                SVCHandler
-                0x08003ea2                PendSVC
-                0x08003ea4                SysTickHandler
-                0x08003ea8                WWDG_IRQHandler
-                0x08003eaa                PVD_IRQHandler
-                0x08003eac                TAMPER_IRQHandler
-                0x08003eae                RTC_IRQHandler
-                0x08003eb0                FLASH_IRQHandler
-                0x08003eb2                RCC_IRQHandler
-                0x08003eb4                EXTI0_IRQHandler
-                0x08003eb6                EXTI1_IRQHandler
-                0x08003eb8                EXTI2_IRQHandler
-                0x08003eba                EXTI3_IRQHandler
-                0x08003ebc                EXTI4_IRQHandler
-                0x08003ebe                DMA1_Channel1_IRQHandler
-                0x08003ec0                DMA1_Channel2_IRQHandler
-                0x08003ec2                DMA1_Channel3_IRQHandler
-                0x08003ec4                DMA1_Channel4_IRQHandler
-                0x08003ec6                DMA1_Channel5_IRQHandler
-                0x08003ec8                DMA1_Channel6_IRQHandler
-                0x08003eca                DMA1_Channel7_IRQHandler
-                0x08003ecc                ADC1_2_IRQHandler
-                0x08003ece                USB_HP_CAN_TX_IRQHandler
-                0x08003ed0                USB_LP_CAN_RX0_IRQHandler
-                0x08003ed2                CAN_RX1_IRQHandler
-                0x08003ed4                CAN_SCE_IRQHandler
-                0x08003ed6                EXTI9_5_IRQHandler
-                0x08003ed8                TIM1_BRK_IRQHandler
-                0x08003eda                TIM1_UP_IRQHandler
-                0x08003edc                TIM1_TRG_COM_IRQHandler
-                0x08003ede                TIM1_CC_IRQHandler
-                0x08003ee0                TIM2_IRQHandler
-                0x08003ee4                TIM3_IRQHandler
-                0x08003ee6                TIM4_IRQHandler
-                0x08003ee8                I2C1_EV_IRQHandler
-                0x08003eea                I2C1_ER_IRQHandler
-                0x08003eec                I2C2_EV_IRQHandler
-                0x08003eee                I2C2_ER_IRQHandler
-                0x08003ef0                SPI1_IRQHandler
-                0x08003ef2                SPI2_IRQHandler
-                0x08003ef4                USART1_IRQHandler
-                0x08003ef8                USART2_IRQHandler
-                0x08003efa                USART3_IRQHandler
-                0x08003efc                EXTI15_10_IRQHandler
-                0x08003efe                RTCAlarm_IRQHandler
-                0x08003f00                USBWakeUp_IRQHandler
-                0x08003f02                TIM8_BRK_IRQHandler
-                0x08003f04                TIM8_UP_IRQHandler
-                0x08003f06                TIM8_TRG_COM_IRQHandler
-                0x08003f08                TIM8_CC_IRQHandler
-                0x08003f0a                ADC3_IRQHandler
-                0x08003f0c                FSMC_IRQHandler
-                0x08003f0e                SDIO_IRQHandler
-                0x08003f10                TIM5_IRQHandler
-                0x08003f12                SPI3_IRQHandler
-                0x08003f14                UART4_IRQHandler
-                0x08003f16                UART5_IRQHandler
-                0x08003f18                TIM6_IRQHandler
-                0x08003f1a                TIM7_IRQHandler
-                0x08003f1c                DMA2_Channel1_IRQHandler
-                0x08003f1e                DMA2_Channel2_IRQHandler
-                0x08003f20                DMA2_Channel3_IRQHandler
-                0x08003f22                DMA2_Channel4_5_IRQHandler
- .text          0x08003f24       0x62 APP/src/dxl_hal.o
-                0x08003f24                dxl_hal_open
-                0x08003f30                dxl_hal_close
-                0x08003f34                dxl_hal_clear
-                0x08003f38                dxl_hal_tx
-                0x08003f56                dxl_hal_rx
-                0x08003f7a                dxl_hal_set_timeout
-                0x08003f82                dxl_hal_timeout
- *fill*         0x08003f86        0x2 
- .text          0x08003f88      0x37c APP/src/dynamixel.o
-                0x08003f88                dxl_initialize
-                0x08003fb4                dxl_terminate
-                0x08003fb8                dxl_tx_packet
-                0x08004054                dxl_rx_packet
-                0x080041a4                dxl_txrx_packet
-                0x080041c4                dxl_get_result
-                0x080041d0                dxl_set_txpacket_id
-                0x080041dc                dxl_set_txpacket_instruction
-                0x080041e8                dxl_set_txpacket_parameter
-                0x080041f4                dxl_set_txpacket_length
-                0x08004200                dxl_get_rxpacket_error
-                0x08004214                dxl_get_rxpacket_length
-                0x08004220                dxl_get_rxpacket_parameter
-                0x08004230                dxl_makeword
-                0x08004238                dxl_get_lowbyte
-                0x0800423c                dxl_get_highbyte
-                0x08004242                dxl_ping
-                0x0800425c                dxl_read_byte
-                0x08004284                dxl_write_byte
-                0x080042a8                dxl_read_word
-                0x080042d8                dxl_write_word
- .text          0x08004304      0x480 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
-                0x08004304                FLASH_SetLatency
-                0x0800431c                FLASH_HalfCycleAccessCmd
-                0x08004334                FLASH_PrefetchBufferCmd
-                0x0800434c                FLASH_Unlock
-                0x08004364                FLASH_Lock
-                0x08004374                FLASH_GetUserOptionByte
-                0x08004380                FLASH_GetWriteProtectionOptionByte
-                0x0800438c                FLASH_GetReadOutProtectionStatus
-                0x0800439c                FLASH_GetPrefetchBufferStatus
-                0x080043ac                FLASH_ITConfig
-                0x080043c4                FLASH_GetFlagStatus
-                0x080043e4                FLASH_ClearFlag
-                0x080043f0                FLASH_GetStatus
-                0x08004418                FLASH_WaitForLastOperation
-                0x0800444e                FLASH_ErasePage
-                0x08004490                FLASH_EraseAllPages
-                0x080044cc                FLASH_EraseOptionBytes
-                0x0800453c                FLASH_ProgramWord
-                0x08004584                FLASH_ProgramHalfWord
-                0x080045bc                FLASH_ProgramOptionByteData
-                0x08004604                FLASH_EnableWriteProtection
-                0x080046a4                FLASH_ReadOutProtection
-                0x08004730                FLASH_UserOptionByteConfig
- .text          0x08004784      0x258 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
-                0x08004784                GPIO_DeInit
-                0x08004828                GPIO_AFIODeInit
-                0x0800483e                GPIO_Init
-                0x080048da                GPIO_StructInit
-                0x080048ea                GPIO_ReadInputDataBit
-                0x080048f6                GPIO_ReadInputData
-                0x080048fc                GPIO_ReadOutputDataBit
-                0x08004908                GPIO_ReadOutputData
-                0x0800490e                GPIO_SetBits
-                0x08004912                GPIO_ResetBits
-                0x08004916                GPIO_WriteBit
-                0x08004920                GPIO_Write
-                0x08004924                GPIO_PinLockConfig
-                0x08004934                GPIO_EventOutputConfig
-                0x08004950                GPIO_EventOutputCmd
-                0x0800495c                GPIO_PinRemapConfig
-                0x080049b0                GPIO_EXTILineConfig
- .text          0x080049dc      0x314 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
-                0x080049dc                NVIC_DeInit
-                0x08004a10                NVIC_SCBDeInit
-                0x08004a40                NVIC_PriorityGroupConfig
-                0x08004a54                NVIC_Init
-                0x08004ad8                NVIC_StructInit
-                0x08004ae4                NVIC_SETPRIMASK
-                0x08004ae8                NVIC_RESETPRIMASK
-                0x08004aec                NVIC_SETFAULTMASK
-                0x08004af0                NVIC_RESETFAULTMASK
-                0x08004af4                NVIC_BASEPRICONFIG
-                0x08004afa                NVIC_GetBASEPRI
-                0x08004afe                NVIC_GetCurrentPendingIRQChannel
-                0x08004b0c                NVIC_GetIRQChannelPendingBitStatus
-                0x08004b2c                NVIC_SetIRQChannelPendingBit
-                0x08004b38                NVIC_ClearIRQChannelPendingBit
-                0x08004b50                NVIC_GetCurrentActiveHandler
-                0x08004b60                NVIC_GetIRQChannelActiveBitStatus
-                0x08004b80                NVIC_GetCPUID
-                0x08004b8c                NVIC_SetVectorTable
-                0x08004ba0                NVIC_GenerateSystemReset
-                0x08004bb0                NVIC_GenerateCoreReset
-                0x08004bc0                NVIC_SystemLPConfig
-                0x08004bd8                NVIC_SystemHandlerConfig
-                0x08004bf8                NVIC_SystemHandlerPriorityConfig
-                0x08004c44                NVIC_GetSystemHandlerPendingBitStatus
-                0x08004c60                NVIC_SetSystemHandlerPendingBit
-                0x08004c78                NVIC_ClearSystemHandlerPendingBit
-                0x08004c90                NVIC_GetSystemHandlerActiveBitStatus
-                0x08004cac                NVIC_GetFaultHandlerSources
-                0x08004cdc                NVIC_GetFaultAddress
- .text          0x08004cf0       0xc8 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
-                0x08004cf0                PWR_DeInit
-                0x08004d0a                PWR_BackupAccessCmd
-                0x08004d14                PWR_PVDCmd
-                0x08004d20                PWR_PVDLevelConfig
-                0x08004d34                PWR_WakeUpPinCmd
-                0x08004d40                PWR_EnterSTOPMode
-                0x08004d6c                PWR_EnterSTANDBYMode
-                0x08004d94                PWR_GetFlagStatus
-                0x08004da8                PWR_ClearFlag
- .text          0x08004db8      0x33c stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
-                0x08004db8                RCC_DeInit
-                0x08004df4                RCC_HSEConfig
-                0x08004e2c                RCC_AdjustHSICalibrationValue
-                0x08004e40                RCC_HSICmd
-                0x08004e4c                RCC_PLLConfig
-                0x08004e60                RCC_PLLCmd
-                0x08004e6c                RCC_SYSCLKConfig
-                0x08004e80                RCC_GetSYSCLKSource
-                0x08004e90                RCC_HCLKConfig
-                0x08004ea4                RCC_PCLK1Config
-                0x08004eb8                RCC_PCLK2Config
-                0x08004ecc                RCC_ITConfig
-                0x08004ee4                RCC_USBCLKConfig
-                0x08004ef0                RCC_ADCCLKConfig
-                0x08004f04                RCC_LSEConfig
-                0x08004f24                RCC_LSICmd
-                0x08004f30                RCC_RTCCLKConfig
-                0x08004f40                RCC_RTCCLKCmd
-                0x08004f4c                RCC_GetClocksFreq
-                0x08004fd0                RCC_AHBPeriphClockCmd
-                0x08004fe8                RCC_APB2PeriphClockCmd
-                0x08005000                RCC_APB1PeriphClockCmd
-                0x08005018                RCC_APB2PeriphResetCmd
-                0x08005030                RCC_APB1PeriphResetCmd
-                0x08005048                RCC_BackupResetCmd
-                0x08005054                RCC_ClockSecuritySystemCmd
-                0x08005060                RCC_MCOConfig
-                0x0800506c                RCC_GetFlagStatus
-                0x08005094                RCC_WaitForHSEStartUp
-                0x080050c2                RCC_ClearFlag
-                0x080050d4                RCC_GetITStatus
-                0x080050e8                RCC_ClearITPendingBit
- .text          0x080050f4       0x8c stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
-                0x080050f4                SysTick_CLKSourceConfig
-                0x0800510c                SysTick_SetReload
-                0x08005118                SysTick_CounterCmd
-                0x08005140                SysTick_ITConfig
-                0x08005158                SysTick_GetCounter
-                0x08005164                SysTick_GetFlagStatus
- .text          0x08005180      0xa44 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
-                0x080051ec                TIM_DeInit
-                0x080052b4                TIM_TimeBaseInit
-                0x080052f0                TIM_OC1Init
-                0x08005364                TIM_OC2Init
-                0x080053ec                TIM_OC3Init
-                0x08005470                TIM_OC4Init
-                0x080054d8                TIM_BDTRConfig
-                0x080054fa                TIM_TimeBaseStructInit
-                0x0800550c                TIM_OCStructInit
-                0x08005520                TIM_ICStructInit
-                0x08005530                TIM_BDTRStructInit
-                0x08005542                TIM_Cmd
-                0x0800555a                TIM_CtrlPWMOutputs
-                0x08005576                TIM_ITConfig
-                0x08005588                TIM_GenerateEvent
-                0x0800558c                TIM_DMAConfig
-                0x08005594                TIM_DMACmd
-                0x080055a6                TIM_InternalClockConfig
-                0x080055b4                TIM_ITRxExternalClockConfig
-                0x080055ce                TIM_TIxExternalClockConfig
-                0x08005602                TIM_ETRConfig
-                0x08005616                TIM_ETRClockMode1Config
-                0x08005630                TIM_ETRClockMode2Config
-                0x08005644                TIM_PrescalerConfig
-                0x0800564a                TIM_CounterModeConfig
-                0x0800565a                TIM_SelectInputTrigger
-                0x0800566a                TIM_EncoderInterfaceConfig
-                0x080056a6                TIM_ForcedOC1Config
-                0x080056b6                TIM_ForcedOC2Config
-                0x080056ca                TIM_ForcedOC3Config
-                0x080056da                TIM_ForcedOC4Config
-                0x080056ee                TIM_ARRPreloadConfig
-                0x08005706                TIM_SelectCOM
-                0x0800571e                TIM_SelectCCDMA
-                0x08005736                TIM_CCPreloadControl
-                0x0800574e                TIM_OC1PreloadConfig
-                0x0800575e                TIM_OC2PreloadConfig
-                0x08005772                TIM_OC3PreloadConfig
-                0x08005782                TIM_OC4PreloadConfig
-                0x08005796                TIM_OC1FastConfig
-                0x080057a6                TIM_OC2FastConfig
-                0x080057ba                TIM_OC3FastConfig
-                0x080057ca                TIM_OC4FastConfig
-                0x080057de                TIM_ClearOC1Ref
-                0x080057ee                TIM_ClearOC2Ref
-                0x080057fe                TIM_ClearOC3Ref
-                0x0800580e                TIM_ClearOC4Ref
-                0x0800581e                TIM_OC1PolarityConfig
-                0x0800582e                TIM_OC1NPolarityConfig
-                0x0800583e                TIM_OC2PolarityConfig
-                0x08005852                TIM_OC2NPolarityConfig
-                0x08005866                TIM_OC3PolarityConfig
-                0x0800587a                TIM_OC3NPolarityConfig
-                0x0800588e                TIM_OC4PolarityConfig
-                0x080058a2                TIM_CCxCmd
-                0x080058be                TIM_CCxNCmd
-                0x080058da                TIM_SelectOCxM
-                0x0800591e                TIM_UpdateDisableConfig
-                0x08005936                TIM_UpdateRequestConfig
-                0x0800594e                TIM_SelectHallSensor
-                0x08005966                TIM_SelectOnePulseMode
-                0x0800597c                TIM_SelectOutputTrigger
-                0x08005992                TIM_SelectSlaveMode
-                0x080059a8                TIM_SelectMasterSlaveMode
-                0x080059be                TIM_SetCounter
-                0x080059c2                TIM_SetAutoreload
-                0x080059c6                TIM_SetCompare1
-                0x080059ca                TIM_SetCompare2
-                0x080059ce                TIM_SetCompare3
-                0x080059d2                TIM_SetCompare4
-                0x080059d8                TIM_SetIC1Prescaler
-                0x080059ee                TIM_SetIC2Prescaler
-                0x08005a08                TIM_PWMIConfig
-                0x08005a76                TIM_SetIC3Prescaler
-                0x08005a8c                TIM_SetIC4Prescaler
-                0x08005aa6                TIM_ICInit
-                0x08005b5c                TIM_SetClockDivision
-                0x08005b6c                TIM_GetCapture1
-                0x08005b72                TIM_GetCapture2
-                0x08005b78                TIM_GetCapture3
-                0x08005b7e                TIM_GetCapture4
-                0x08005b86                TIM_GetCounter
-                0x08005b8c                TIM_GetPrescaler
-                0x08005b92                TIM_GetFlagStatus
-                0x08005b9e                TIM_ClearFlag
-                0x08005ba6                TIM_GetITStatus
-                0x08005bbc                TIM_ClearITPendingBit
- .text          0x08005bc4      0x344 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
-                0x08005bc4                USART_DeInit
-                0x08005c58                USART_Init
-                0x08005ce0                USART_StructInit
-                0x08005cf6                USART_ClockInit
-                0x08005d16                USART_ClockStructInit
-                0x08005d22                USART_Cmd
-                0x08005d3a                USART_ITConfig
-                0x08005d6c                USART_DMACmd
-                0x08005d7e                USART_SetAddress
-                0x08005d94                USART_WakeUpConfig
-                0x08005daa                USART_ReceiverWakeUpCmd
-                0x08005dc2                USART_LINBreakDetectLengthConfig
-                0x08005dd8                USART_LINCmd
-                0x08005df0                USART_SendData
-                0x08005df8                USART_ReceiveData
-                0x08005e00                USART_SendBreak
-                0x08005e0c                USART_SetGuardTime
-                0x08005e1e                USART_SetPrescaler
-                0x08005e30                USART_SmartCardCmd
-                0x08005e48                USART_SmartCardNACKCmd
-                0x08005e60                USART_HalfDuplexCmd
-                0x08005e78                USART_IrDAConfig
-                0x08005e8e                USART_IrDACmd
-                0x08005ea6                USART_GetFlagStatus
-                0x08005eb2                USART_ClearFlag
-                0x08005eba                USART_GetITStatus
-                0x08005ef8                USART_ClearITPendingBit
- .text          0x08005f08       0x6e stm32f10x_lib/libstm32.a(cortexm3_macro.o)
-                0x08005f08                __WFI
-                0x08005f0c                __WFE
-                0x08005f10                __SEV
-                0x08005f14                __ISB
-                0x08005f1a                __DSB
-                0x08005f20                __DMB
-                0x08005f26                __SVC
-                0x08005f2a                __MRS_CONTROL
-                0x08005f30                __MSR_CONTROL
-                0x08005f3a                __MRS_PSP
-                0x08005f40                __MSR_PSP
-                0x08005f46                __MRS_MSP
-                0x08005f4c                __MSR_MSP
-                0x08005f52                __SETPRIMASK
-                0x08005f56                __RESETPRIMASK
-                0x08005f5a                __SETFAULTMASK
-                0x08005f5e                __RESETFAULTMASK
-                0x08005f62                __BASEPRICONFIG
-                0x08005f68                __GetBASEPRI
-                0x08005f6e                __REV_HalfWord
-                0x08005f72                __REV_Word
- *fill*         0x08005f76        0x2 
- .text          0x08005f78       0x50 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
-                0x08005f78                Reset_Handler
+                0x08003bbe                init_music2
+                0x08003c3c                init_lights
+                0x08003d40                up_to_lowering
+                0x08003d74                detectlb
+                0x08003dbc                USART_Configuration
+                0x08003e38                init_config
+                0x08003e68                USART1_Configuration
+                0x08003e70                StartDiscount
+                0x08003e7c                CheckTimeOut
+ .text          0x08003e90       0x90 APP/src/stm32f10x_it.o
+                0x08003e90                NMIException
+                0x08003e92                HardFaultException
+                0x08003e94                MemManageException
+                0x08003e96                BusFaultException
+                0x08003e98                UsageFaultException
+                0x08003e9a                DebugMonitor
+                0x08003e9c                SVCHandler
+                0x08003e9e                PendSVC
+                0x08003ea0                SysTickHandler
+                0x08003ea4                WWDG_IRQHandler
+                0x08003ea6                PVD_IRQHandler
+                0x08003ea8                TAMPER_IRQHandler
+                0x08003eaa                RTC_IRQHandler
+                0x08003eac                FLASH_IRQHandler
+                0x08003eae                RCC_IRQHandler
+                0x08003eb0                EXTI0_IRQHandler
+                0x08003eb2                EXTI1_IRQHandler
+                0x08003eb4                EXTI2_IRQHandler
+                0x08003eb6                EXTI3_IRQHandler
+                0x08003eb8                EXTI4_IRQHandler
+                0x08003eba                DMA1_Channel1_IRQHandler
+                0x08003ebc                DMA1_Channel2_IRQHandler
+                0x08003ebe                DMA1_Channel3_IRQHandler
+                0x08003ec0                DMA1_Channel4_IRQHandler
+                0x08003ec2                DMA1_Channel5_IRQHandler
+                0x08003ec4                DMA1_Channel6_IRQHandler
+                0x08003ec6                DMA1_Channel7_IRQHandler
+                0x08003ec8                ADC1_2_IRQHandler
+                0x08003eca                USB_HP_CAN_TX_IRQHandler
+                0x08003ecc                USB_LP_CAN_RX0_IRQHandler
+                0x08003ece                CAN_RX1_IRQHandler
+                0x08003ed0                CAN_SCE_IRQHandler
+                0x08003ed2                EXTI9_5_IRQHandler
+                0x08003ed4                TIM1_BRK_IRQHandler
+                0x08003ed6                TIM1_UP_IRQHandler
+                0x08003ed8                TIM1_TRG_COM_IRQHandler
+                0x08003eda                TIM1_CC_IRQHandler
+                0x08003edc                TIM2_IRQHandler
+                0x08003ee0                TIM3_IRQHandler
+                0x08003ee2                TIM4_IRQHandler
+                0x08003ee4                I2C1_EV_IRQHandler
+                0x08003ee6                I2C1_ER_IRQHandler
+                0x08003ee8                I2C2_EV_IRQHandler
+                0x08003eea                I2C2_ER_IRQHandler
+                0x08003eec                SPI1_IRQHandler
+                0x08003eee                SPI2_IRQHandler
+                0x08003ef0                USART1_IRQHandler
+                0x08003ef4                USART2_IRQHandler
+                0x08003ef6                USART3_IRQHandler
+                0x08003ef8                EXTI15_10_IRQHandler
+                0x08003efa                RTCAlarm_IRQHandler
+                0x08003efc                USBWakeUp_IRQHandler
+                0x08003efe                TIM8_BRK_IRQHandler
+                0x08003f00                TIM8_UP_IRQHandler
+                0x08003f02                TIM8_TRG_COM_IRQHandler
+                0x08003f04                TIM8_CC_IRQHandler
+                0x08003f06                ADC3_IRQHandler
+                0x08003f08                FSMC_IRQHandler
+                0x08003f0a                SDIO_IRQHandler
+                0x08003f0c                TIM5_IRQHandler
+                0x08003f0e                SPI3_IRQHandler
+                0x08003f10                UART4_IRQHandler
+                0x08003f12                UART5_IRQHandler
+                0x08003f14                TIM6_IRQHandler
+                0x08003f16                TIM7_IRQHandler
+                0x08003f18                DMA2_Channel1_IRQHandler
+                0x08003f1a                DMA2_Channel2_IRQHandler
+                0x08003f1c                DMA2_Channel3_IRQHandler
+                0x08003f1e                DMA2_Channel4_5_IRQHandler
+ .text          0x08003f20       0x62 APP/src/dxl_hal.o
+                0x08003f20                dxl_hal_open
+                0x08003f2c                dxl_hal_close
+                0x08003f30                dxl_hal_clear
+                0x08003f34                dxl_hal_tx
+                0x08003f52                dxl_hal_rx
+                0x08003f76                dxl_hal_set_timeout
+                0x08003f7e                dxl_hal_timeout
+ *fill*         0x08003f82        0x2 
+ .text          0x08003f84      0x37c APP/src/dynamixel.o
+                0x08003f84                dxl_initialize
+                0x08003fb0                dxl_terminate
+                0x08003fb4                dxl_tx_packet
+                0x08004050                dxl_rx_packet
+                0x080041a0                dxl_txrx_packet
+                0x080041c0                dxl_get_result
+                0x080041cc                dxl_set_txpacket_id
+                0x080041d8                dxl_set_txpacket_instruction
+                0x080041e4                dxl_set_txpacket_parameter
+                0x080041f0                dxl_set_txpacket_length
+                0x080041fc                dxl_get_rxpacket_error
+                0x08004210                dxl_get_rxpacket_length
+                0x0800421c                dxl_get_rxpacket_parameter
+                0x0800422c                dxl_makeword
+                0x08004234                dxl_get_lowbyte
+                0x08004238                dxl_get_highbyte
+                0x0800423e                dxl_ping
+                0x08004258                dxl_read_byte
+                0x08004280                dxl_write_byte
+                0x080042a4                dxl_read_word
+                0x080042d4                dxl_write_word
+ .text          0x08004300      0x480 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+                0x08004300                FLASH_SetLatency
+                0x08004318                FLASH_HalfCycleAccessCmd
+                0x08004330                FLASH_PrefetchBufferCmd
+                0x08004348                FLASH_Unlock
+                0x08004360                FLASH_Lock
+                0x08004370                FLASH_GetUserOptionByte
+                0x0800437c                FLASH_GetWriteProtectionOptionByte
+                0x08004388                FLASH_GetReadOutProtectionStatus
+                0x08004398                FLASH_GetPrefetchBufferStatus
+                0x080043a8                FLASH_ITConfig
+                0x080043c0                FLASH_GetFlagStatus
+                0x080043e0                FLASH_ClearFlag
+                0x080043ec                FLASH_GetStatus
+                0x08004414                FLASH_WaitForLastOperation
+                0x0800444a                FLASH_ErasePage
+                0x0800448c                FLASH_EraseAllPages
+                0x080044c8                FLASH_EraseOptionBytes
+                0x08004538                FLASH_ProgramWord
+                0x08004580                FLASH_ProgramHalfWord
+                0x080045b8                FLASH_ProgramOptionByteData
+                0x08004600                FLASH_EnableWriteProtection
+                0x080046a0                FLASH_ReadOutProtection
+                0x0800472c                FLASH_UserOptionByteConfig
+ .text          0x08004780      0x258 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+                0x08004780                GPIO_DeInit
+                0x08004824                GPIO_AFIODeInit
+                0x0800483a                GPIO_Init
+                0x080048d6                GPIO_StructInit
+                0x080048e6                GPIO_ReadInputDataBit
+                0x080048f2                GPIO_ReadInputData
+                0x080048f8                GPIO_ReadOutputDataBit
+                0x08004904                GPIO_ReadOutputData
+                0x0800490a                GPIO_SetBits
+                0x0800490e                GPIO_ResetBits
+                0x08004912                GPIO_WriteBit
+                0x0800491c                GPIO_Write
+                0x08004920                GPIO_PinLockConfig
+                0x08004930                GPIO_EventOutputConfig
+                0x0800494c                GPIO_EventOutputCmd
+                0x08004958                GPIO_PinRemapConfig
+                0x080049ac                GPIO_EXTILineConfig
+ .text          0x080049d8      0x314 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+                0x080049d8                NVIC_DeInit
+                0x08004a0c                NVIC_SCBDeInit
+                0x08004a3c                NVIC_PriorityGroupConfig
+                0x08004a50                NVIC_Init
+                0x08004ad4                NVIC_StructInit
+                0x08004ae0                NVIC_SETPRIMASK
+                0x08004ae4                NVIC_RESETPRIMASK
+                0x08004ae8                NVIC_SETFAULTMASK
+                0x08004aec                NVIC_RESETFAULTMASK
+                0x08004af0                NVIC_BASEPRICONFIG
+                0x08004af6                NVIC_GetBASEPRI
+                0x08004afa                NVIC_GetCurrentPendingIRQChannel
+                0x08004b08                NVIC_GetIRQChannelPendingBitStatus
+                0x08004b28                NVIC_SetIRQChannelPendingBit
+                0x08004b34                NVIC_ClearIRQChannelPendingBit
+                0x08004b4c                NVIC_GetCurrentActiveHandler
+                0x08004b5c                NVIC_GetIRQChannelActiveBitStatus
+                0x08004b7c                NVIC_GetCPUID
+                0x08004b88                NVIC_SetVectorTable
+                0x08004b9c                NVIC_GenerateSystemReset
+                0x08004bac                NVIC_GenerateCoreReset
+                0x08004bbc                NVIC_SystemLPConfig
+                0x08004bd4                NVIC_SystemHandlerConfig
+                0x08004bf4                NVIC_SystemHandlerPriorityConfig
+                0x08004c40                NVIC_GetSystemHandlerPendingBitStatus
+                0x08004c5c                NVIC_SetSystemHandlerPendingBit
+                0x08004c74                NVIC_ClearSystemHandlerPendingBit
+                0x08004c8c                NVIC_GetSystemHandlerActiveBitStatus
+                0x08004ca8                NVIC_GetFaultHandlerSources
+                0x08004cd8                NVIC_GetFaultAddress
+ .text          0x08004cec       0xc8 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+                0x08004cec                PWR_DeInit
+                0x08004d06                PWR_BackupAccessCmd
+                0x08004d10                PWR_PVDCmd
+                0x08004d1c                PWR_PVDLevelConfig
+                0x08004d30                PWR_WakeUpPinCmd
+                0x08004d3c                PWR_EnterSTOPMode
+                0x08004d68                PWR_EnterSTANDBYMode
+                0x08004d90                PWR_GetFlagStatus
+                0x08004da4                PWR_ClearFlag
+ .text          0x08004db4      0x33c stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                0x08004db4                RCC_DeInit
+                0x08004df0                RCC_HSEConfig
+                0x08004e28                RCC_AdjustHSICalibrationValue
+                0x08004e3c                RCC_HSICmd
+                0x08004e48                RCC_PLLConfig
+                0x08004e5c                RCC_PLLCmd
+                0x08004e68                RCC_SYSCLKConfig
+                0x08004e7c                RCC_GetSYSCLKSource
+                0x08004e8c                RCC_HCLKConfig
+                0x08004ea0                RCC_PCLK1Config
+                0x08004eb4                RCC_PCLK2Config
+                0x08004ec8                RCC_ITConfig
+                0x08004ee0                RCC_USBCLKConfig
+                0x08004eec                RCC_ADCCLKConfig
+                0x08004f00                RCC_LSEConfig
+                0x08004f20                RCC_LSICmd
+                0x08004f2c                RCC_RTCCLKConfig
+                0x08004f3c                RCC_RTCCLKCmd
+                0x08004f48                RCC_GetClocksFreq
+                0x08004fcc                RCC_AHBPeriphClockCmd
+                0x08004fe4                RCC_APB2PeriphClockCmd
+                0x08004ffc                RCC_APB1PeriphClockCmd
+                0x08005014                RCC_APB2PeriphResetCmd
+                0x0800502c                RCC_APB1PeriphResetCmd
+                0x08005044                RCC_BackupResetCmd
+                0x08005050                RCC_ClockSecuritySystemCmd
+                0x0800505c                RCC_MCOConfig
+                0x08005068                RCC_GetFlagStatus
+                0x08005090                RCC_WaitForHSEStartUp
+                0x080050be                RCC_ClearFlag
+                0x080050d0                RCC_GetITStatus
+                0x080050e4                RCC_ClearITPendingBit
+ .text          0x080050f0       0x8c stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+                0x080050f0                SysTick_CLKSourceConfig
+                0x08005108                SysTick_SetReload
+                0x08005114                SysTick_CounterCmd
+                0x0800513c                SysTick_ITConfig
+                0x08005154                SysTick_GetCounter
+                0x08005160                SysTick_GetFlagStatus
+ .text          0x0800517c      0xa44 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                0x080051e8                TIM_DeInit
+                0x080052b0                TIM_TimeBaseInit
+                0x080052ec                TIM_OC1Init
+                0x08005360                TIM_OC2Init
+                0x080053e8                TIM_OC3Init
+                0x0800546c                TIM_OC4Init
+                0x080054d4                TIM_BDTRConfig
+                0x080054f6                TIM_TimeBaseStructInit
+                0x08005508                TIM_OCStructInit
+                0x0800551c                TIM_ICStructInit
+                0x0800552c                TIM_BDTRStructInit
+                0x0800553e                TIM_Cmd
+                0x08005556                TIM_CtrlPWMOutputs
+                0x08005572                TIM_ITConfig
+                0x08005584                TIM_GenerateEvent
+                0x08005588                TIM_DMAConfig
+                0x08005590                TIM_DMACmd
+                0x080055a2                TIM_InternalClockConfig
+                0x080055b0                TIM_ITRxExternalClockConfig
+                0x080055ca                TIM_TIxExternalClockConfig
+                0x080055fe                TIM_ETRConfig
+                0x08005612                TIM_ETRClockMode1Config
+                0x0800562c                TIM_ETRClockMode2Config
+                0x08005640                TIM_PrescalerConfig
+                0x08005646                TIM_CounterModeConfig
+                0x08005656                TIM_SelectInputTrigger
+                0x08005666                TIM_EncoderInterfaceConfig
+                0x080056a2                TIM_ForcedOC1Config
+                0x080056b2                TIM_ForcedOC2Config
+                0x080056c6                TIM_ForcedOC3Config
+                0x080056d6                TIM_ForcedOC4Config
+                0x080056ea                TIM_ARRPreloadConfig
+                0x08005702                TIM_SelectCOM
+                0x0800571a                TIM_SelectCCDMA
+                0x08005732                TIM_CCPreloadControl
+                0x0800574a                TIM_OC1PreloadConfig
+                0x0800575a                TIM_OC2PreloadConfig
+                0x0800576e                TIM_OC3PreloadConfig
+                0x0800577e                TIM_OC4PreloadConfig
+                0x08005792                TIM_OC1FastConfig
+                0x080057a2                TIM_OC2FastConfig
+                0x080057b6                TIM_OC3FastConfig
+                0x080057c6                TIM_OC4FastConfig
+                0x080057da                TIM_ClearOC1Ref
+                0x080057ea                TIM_ClearOC2Ref
+                0x080057fa                TIM_ClearOC3Ref
+                0x0800580a                TIM_ClearOC4Ref
+                0x0800581a                TIM_OC1PolarityConfig
+                0x0800582a                TIM_OC1NPolarityConfig
+                0x0800583a                TIM_OC2PolarityConfig
+                0x0800584e                TIM_OC2NPolarityConfig
+                0x08005862                TIM_OC3PolarityConfig
+                0x08005876                TIM_OC3NPolarityConfig
+                0x0800588a                TIM_OC4PolarityConfig
+                0x0800589e                TIM_CCxCmd
+                0x080058ba                TIM_CCxNCmd
+                0x080058d6                TIM_SelectOCxM
+                0x0800591a                TIM_UpdateDisableConfig
+                0x08005932                TIM_UpdateRequestConfig
+                0x0800594a                TIM_SelectHallSensor
+                0x08005962                TIM_SelectOnePulseMode
+                0x08005978                TIM_SelectOutputTrigger
+                0x0800598e                TIM_SelectSlaveMode
+                0x080059a4                TIM_SelectMasterSlaveMode
+                0x080059ba                TIM_SetCounter
+                0x080059be                TIM_SetAutoreload
+                0x080059c2                TIM_SetCompare1
+                0x080059c6                TIM_SetCompare2
+                0x080059ca                TIM_SetCompare3
+                0x080059ce                TIM_SetCompare4
+                0x080059d4                TIM_SetIC1Prescaler
+                0x080059ea                TIM_SetIC2Prescaler
+                0x08005a04                TIM_PWMIConfig
+                0x08005a72                TIM_SetIC3Prescaler
+                0x08005a88                TIM_SetIC4Prescaler
+                0x08005aa2                TIM_ICInit
+                0x08005b58                TIM_SetClockDivision
+                0x08005b68                TIM_GetCapture1
+                0x08005b6e                TIM_GetCapture2
+                0x08005b74                TIM_GetCapture3
+                0x08005b7a                TIM_GetCapture4
+                0x08005b82                TIM_GetCounter
+                0x08005b88                TIM_GetPrescaler
+                0x08005b8e                TIM_GetFlagStatus
+                0x08005b9a                TIM_ClearFlag
+                0x08005ba2                TIM_GetITStatus
+                0x08005bb8                TIM_ClearITPendingBit
+ .text          0x08005bc0      0x344 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                0x08005bc0                USART_DeInit
+                0x08005c54                USART_Init
+                0x08005cdc                USART_StructInit
+                0x08005cf2                USART_ClockInit
+                0x08005d12                USART_ClockStructInit
+                0x08005d1e                USART_Cmd
+                0x08005d36                USART_ITConfig
+                0x08005d68                USART_DMACmd
+                0x08005d7a                USART_SetAddress
+                0x08005d90                USART_WakeUpConfig
+                0x08005da6                USART_ReceiverWakeUpCmd
+                0x08005dbe                USART_LINBreakDetectLengthConfig
+                0x08005dd4                USART_LINCmd
+                0x08005dec                USART_SendData
+                0x08005df4                USART_ReceiveData
+                0x08005dfc                USART_SendBreak
+                0x08005e08                USART_SetGuardTime
+                0x08005e1a                USART_SetPrescaler
+                0x08005e2c                USART_SmartCardCmd
+                0x08005e44                USART_SmartCardNACKCmd
+                0x08005e5c                USART_HalfDuplexCmd
+                0x08005e74                USART_IrDAConfig
+                0x08005e8a                USART_IrDACmd
+                0x08005ea2                USART_GetFlagStatus
+                0x08005eae                USART_ClearFlag
+                0x08005eb6                USART_GetITStatus
+                0x08005ef4                USART_ClearITPendingBit
+ .text          0x08005f04       0x6e stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+                0x08005f04                __WFI
+                0x08005f08                __WFE
+                0x08005f0c                __SEV
+                0x08005f10                __ISB
+                0x08005f16                __DSB
+                0x08005f1c                __DMB
+                0x08005f22                __SVC
+                0x08005f26                __MRS_CONTROL
+                0x08005f2c                __MSR_CONTROL
+                0x08005f36                __MRS_PSP
+                0x08005f3c                __MSR_PSP
+                0x08005f42                __MRS_MSP
+                0x08005f48                __MSR_MSP
+                0x08005f4e                __SETPRIMASK
+                0x08005f52                __RESETPRIMASK
+                0x08005f56                __SETFAULTMASK
+                0x08005f5a                __RESETFAULTMASK
+                0x08005f5e                __BASEPRICONFIG
+                0x08005f64                __GetBASEPRI
+                0x08005f6a                __REV_HalfWord
+                0x08005f6e                __REV_Word
+ *fill*         0x08005f72        0x2 
+ .text          0x08005f74       0x50 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+                0x08005f74                Reset_Handler
  *(.text.*)
- .text.startup  0x08005fc8      0x194 APP/src/main.o
-                0x08005fc8                main
+ .text.startup  0x08005fc4      0x194 APP/src/main.o
+                0x08005fc4                main
  *(.rodata)
- .rodata        0x0800615c       0x14 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .rodata        0x08006158       0x14 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
  *(.rodata*)
  .rodata.str1.1
-                0x08006170      0x262 APP/src/main.o
+                0x0800616c      0x262 APP/src/main.o
                                 0x271 (size before relaxing)
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
-                0x080063d4                . = ALIGN (0x4)
- *fill*         0x080063d2        0x2 
-                0x080063d4                _etext = .
-                0x080063d4                _sidata = _etext
+                0x080063d0                . = ALIGN (0x4)
+ *fill*         0x080063ce        0x2 
+                0x080063d0                _etext = .
+                0x080063d0                _sidata = _etext
 
-.vfp11_veneer   0x080063d4        0x0
+.vfp11_veneer   0x080063d0        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x080063d4        0x0
+.v4_bx          0x080063d0        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x080063d4        0x0
- .iplt          0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+.iplt           0x080063d0        0x0
+ .iplt          0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
 
-.rel.dyn        0x080063d4        0x0
- .rel.iplt      0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+.rel.dyn        0x080063d0        0x0
+ .rel.iplt      0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
 
-.data           0x20000000       0x18 load address 0x080063d4
+.data           0x20000000       0x18 load address 0x080063d0
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -798,10 +798,10 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
                 0x20000018                . = ALIGN (0x4)
                 0x20000018                _edata = .
 
-.igot.plt       0x20000018        0x0 load address 0x080063ec
- .igot.plt      0x00000000        0x0 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+.igot.plt       0x20000018        0x0 load address 0x080063e8
+ .igot.plt      0x00000000        0x0 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
 
-.bss            0x20000018      0x204 load address 0x080063ec
+.bss            0x20000018      0x204 load address 0x080063e8
                 0x20000018                . = ALIGN (0x4)
                 0x20000018                _sbss = .
  *(.bss)
@@ -830,7 +830,7 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
                 0x2000021c                PROVIDE (end, _ebss)
                 0x2000021c                PROVIDE (_end, _ebss)
 
-._usrstack      0x2000021c      0x100 load address 0x080065f0
+._usrstack      0x2000021c      0x100 load address 0x080065ec
                 0x2000021c                . = ALIGN (0x4)
                 0x2000021c                _susrstack = .
                 0x2000031c                . = (. + _Minimum_Stack_Size)
@@ -982,22 +982,22 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x96c1
+.debug_info     0x00000000     0x96ba
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x359f APP/src/main.o
- .debug_info    0x0000359f      0x584 APP/src/stm32f10x_it.o
- .debug_info    0x00003b23      0x2d8 APP/src/dxl_hal.o
- .debug_info    0x00003dfb      0x734 APP/src/dynamixel.o
- .debug_info    0x0000452f      0x8bb stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
- .debug_info    0x00004dea      0x747 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
- .debug_info    0x00005531      0x968 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
- .debug_info    0x00005e99      0x2c6 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
- .debug_info    0x0000615f      0x871 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
- .debug_info    0x000069d0      0x20b stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
- .debug_info    0x00006bdb     0x1f42 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
- .debug_info    0x00008b1d      0xa2c stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
- .debug_info    0x00009549       0x65 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
- .debug_info    0x000095ae      0x113 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_info    0x00000000     0x3598 APP/src/main.o
+ .debug_info    0x00003598      0x584 APP/src/stm32f10x_it.o
+ .debug_info    0x00003b1c      0x2d8 APP/src/dxl_hal.o
+ .debug_info    0x00003df4      0x734 APP/src/dynamixel.o
+ .debug_info    0x00004528      0x8bb stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_info    0x00004de3      0x747 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_info    0x0000552a      0x968 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_info    0x00005e92      0x2c6 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_info    0x00006158      0x871 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_info    0x000069c9      0x20b stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_info    0x00006bd4     0x1f42 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_info    0x00008b16      0xa2c stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_info    0x00009542       0x65 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .debug_info    0x000095a7      0x113 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 
 .debug_abbrev   0x00000000     0x194e
  *(.debug_abbrev)
@@ -1016,22 +1016,22 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
  .debug_abbrev  0x00001862       0x14 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
  .debug_abbrev  0x00001876       0xd8 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 
-.debug_line     0x00000000     0x1844
+.debug_line     0x00000000     0x1843
  *(.debug_line)
- .debug_line    0x00000000      0x503 APP/src/main.o
- .debug_line    0x00000503      0x129 APP/src/stm32f10x_it.o
- .debug_line    0x0000062c       0x66 APP/src/dxl_hal.o
- .debug_line    0x00000692      0x158 APP/src/dynamixel.o
- .debug_line    0x000007ea      0x20a stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
- .debug_line    0x000009f4      0x182 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
- .debug_line    0x00000b76      0x1d2 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
- .debug_line    0x00000d48       0xeb stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
- .debug_line    0x00000e33      0x1a0 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
- .debug_line    0x00000fd3       0xb5 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
- .debug_line    0x00001088      0x4db stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
- .debug_line    0x00001563      0x1da stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
- .debug_line    0x0000173d       0xa4 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
- .debug_line    0x000017e1       0x63 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_line    0x00000000      0x502 APP/src/main.o
+ .debug_line    0x00000502      0x129 APP/src/stm32f10x_it.o
+ .debug_line    0x0000062b       0x66 APP/src/dxl_hal.o
+ .debug_line    0x00000691      0x158 APP/src/dynamixel.o
+ .debug_line    0x000007e9      0x20a stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_line    0x000009f3      0x182 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_line    0x00000b75      0x1d2 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_line    0x00000d47       0xeb stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_line    0x00000e32      0x1a0 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_line    0x00000fd2       0xb5 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_line    0x00001087      0x4db stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_line    0x00001562      0x1da stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_line    0x0000173c       0xa4 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .debug_line    0x000017e0       0x63 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 
 .debug_frame    0x00000000     0x1ebc
  *(.debug_frame)
@@ -1049,33 +1049,33 @@ LOAD /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi
  .debug_frame   0x00001c8c      0x200 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
  .debug_frame   0x00001e8c       0x30 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 
-.debug_str      0x00000000     0x30cf
+.debug_str      0x00000000     0x30bc
  *(.debug_str)
- .debug_str     0x00000000      0xe49 APP/src/main.o
-                                0xe9a (size before relaxing)
- .debug_str     0x00000e49      0x547 APP/src/stm32f10x_it.o
+ .debug_str     0x00000000      0xe50 APP/src/main.o
+                                0xea1 (size before relaxing)
+ .debug_str     0x00000e50      0x52d APP/src/stm32f10x_it.o
                                 0x5e8 (size before relaxing)
- .debug_str     0x00001390       0x9b APP/src/dxl_hal.o
+ .debug_str     0x0000137d       0x9b APP/src/dxl_hal.o
                                 0x1b4 (size before relaxing)
- .debug_str     0x0000142b      0x1b3 APP/src/dynamixel.o
+ .debug_str     0x00001418      0x1b3 APP/src/dynamixel.o
                                 0x38a (size before relaxing)
- .debug_str     0x000015de      0x385 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_str     0x000015cb      0x385 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
                                 0x4ea (size before relaxing)
- .debug_str     0x00001963      0x1d8 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_str     0x00001950      0x1d8 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
                                 0x45f (size before relaxing)
- .debug_str     0x00001b3b      0x49a stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_str     0x00001b28      0x49a stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
                                 0x6b9 (size before relaxing)
- .debug_str     0x00001fd5      0x104 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_str     0x00001fc2      0x104 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
                                 0x250 (size before relaxing)
- .debug_str     0x000020d9      0x30f stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_str     0x000020c6      0x30f stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
                                 0x58f (size before relaxing)
- .debug_str     0x000023e8       0xb6 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_str     0x000023d5       0xb6 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
                                 0x234 (size before relaxing)
- .debug_str     0x0000249e      0x8e4 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_str     0x0000248b      0x8e4 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
                                 0xd80 (size before relaxing)
- .debug_str     0x00002d82      0x2d4 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_str     0x00002d6f      0x2d4 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
                                 0x62a (size before relaxing)
- .debug_str     0x00003056       0x79 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_str     0x00003043       0x79 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
                                 0x167 (size before relaxing)
 
 .debug_loc      0x00000000     0x55c5
@@ -1576,7 +1576,7 @@ UsageFaultException                               APP/src/stm32f10x_it.o
 Voltage                                           APP/src/main.o
 WWDG_IRQHandler                                   APP/src/stm32f10x_it.o
                                                   stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
-_Jv_RegisterClasses                               /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+_Jv_RegisterClasses                               /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
 __BASEPRICONFIG                                   stm32f10x_lib/libstm32.a(cortexm3_macro.o)
                                                   stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
 __DMB                                             stm32f10x_lib/libstm32.a(cortexm3_macro.o)
@@ -1608,49 +1608,49 @@ __WFE                                             stm32f10x_lib/libstm32.a(corte
                                                   stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
 __WFI                                             stm32f10x_lib/libstm32.a(cortexm3_macro.o)
                                                   stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
-__bss_end__                                       /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
-__bss_start__                                     /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
-__call_exitprocs                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
-__deregister_frame_info                           /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
-__dso_handle                                      /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
-__fini_array_end                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
-__fini_array_start                                /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
-__init_array_end                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
-__init_array_start                                /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
-__libc_fini                                       /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
-__libc_fini_array                                 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
-__libc_init_array                                 /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
-__preinit_array_end                               /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
-__preinit_array_start                             /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
-__register_exitproc                               /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
-__register_frame_info                             /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
-__stack                                           /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+__bss_end__                                       /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+__bss_start__                                     /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+__call_exitprocs                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
+__deregister_frame_info                           /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+__dso_handle                                      /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+__fini_array_end                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
+__fini_array_start                                /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
+__init_array_end                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+__init_array_start                                /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+__libc_fini                                       /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+__libc_fini_array                                 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+__libc_init_array                                 /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+__preinit_array_end                               /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+__preinit_array_start                             /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+__register_exitproc                               /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
+__register_frame_info                             /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crtbegin.o
+__stack                                           /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
 _ebss                                             stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 _edata                                            stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 _estack                                           stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
-_exit                                             /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
-_fini                                             /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
-_global_impure_ptr                                /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
-_impure_ptr                                       /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
-_init                                             /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
-_mainCRTStartup                                   /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+_exit                                             /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
+_fini                                             /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-fini.o)
+_global_impure_ptr                                /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
+_impure_ptr                                       /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+_init                                             /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/crti.o
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-init.o)
+_mainCRTStartup                                   /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
 _sbss                                             stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 _sdata                                            stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 _sidata                                           stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
-_start                                            /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
-atexit                                            /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+_start                                            /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+atexit                                            /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-atexit.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
 bMoving                                           APP/src/main.o
 buzzWithDelay                                     APP/src/main.o
 capture                                           APP/src/main.o
@@ -1703,9 +1703,9 @@ dxl_write_byte                                    APP/src/dynamixel.o
                                                   APP/src/main.o
 dxl_write_word                                    APP/src/dynamixel.o
                                                   APP/src/main.o
-exit                                              /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
-free                                              /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
+exit                                              /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+free                                              /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__call_atexit.o)
 g_pfnVectors                                      stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
 gbCommStatus                                      APP/src/dynamixel.o
 gbInstructionPacket                               APP/src/dynamixel.o
@@ -1720,7 +1720,7 @@ getSpeed                                          APP/src/main.o
 giBusUsing                                        APP/src/dynamixel.o
 gw1msCounter                                      APP/src/main.o
 gwTimingDelay                                     APP/src/main.o
-hardware_init_hook                                /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+hardware_init_hook                                /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
 id                                                APP/src/main.o
 infiniteTurn                                      APP/src/main.o
 init_config                                       APP/src/main.o
@@ -1736,10 +1736,10 @@ lowering_to_low                                   APP/src/main.o
 mDelay                                            APP/src/main.o
 main                                              APP/src/main.o
                                                   stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
-malloc                                            /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
-memset                                            /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
-                                                  /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+malloc                                            /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-__atexit.o)
+memset                                            /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-memset.o)
+                                                  /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
 move_backward                                     APP/src/main.o
 move_forward                                      APP/src/main.o
 normalTurn                                        APP/src/main.o
@@ -1748,7 +1748,7 @@ rightInfraRed                                     APP/src/main.o
 rightLuminosity                                   APP/src/main.o
 setAngle                                          APP/src/main.o
 setSpeed                                          APP/src/main.o
-software_init_hook                                /home/ensta/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
+software_init_hook                                /home/clement/tools/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/crt0.o
 switch_off_lights                                 APP/src/main.o
 timeBuzz                                          APP/src/main.o
 turn_left                                         APP/src/main.o
