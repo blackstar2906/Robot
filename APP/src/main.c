@@ -130,7 +130,7 @@ byte CheckTimeOut(void);
 
 //#define speed_ini 400
 //#define speed_max 512
-#define speed_turn 350
+#define speed_turn 450
 #define speed_ini 700
 #define speed_max 1023
 
@@ -536,6 +536,9 @@ int main(void)
             // strategy : attack the opponent by the right side)
             switch_off_lights();
             GPIO_ResetBits(PORT_LED_MANAGE, PIN_LED_MANAGE);
+            move_forward(speed_max);
+            mDelay(3000);
+            /*
             turn_right();
             mDelay(1500);
             move_forward(speed_max);
@@ -543,7 +546,7 @@ int main(void)
             turn_left();
             mDelay(2200);
             move_forward(speed_max);
-            mDelay(2500);
+            mDelay(2500); */
             state=SEEKING;
         }
 
