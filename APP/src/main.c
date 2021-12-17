@@ -125,7 +125,6 @@ byte CheckTimeOut(void);
 #define GO_TO_CENTER 1
 #define SEEKING 2
 #define CHASING 3
-#define DODGE_BORDER 4
 #define STOP -1
 
 
@@ -565,17 +564,12 @@ int main(void)
             mDelay(1000);
             centerInfraRed(SENSOR, &field);
 
-            // detect border;
-            leftInfraRed(SENSOR, &leftfield);
-            if (leftfield >= thresholdLight)
-                state = DODGE_BORDER;
+            // detect border
+            detectlb(thresholdLight, &leftfield);
+
             // opponent detection will result in an attitude change
             if (field >= thresholdInfrared)  // indeed this condition should be explicit
                 state = CHASING;
-        }
-
-        while (state==DODGE_BORDER) {
-            dodge_border();
         }
 
         // the robot will focus the opponent and try to push him away,
@@ -826,13 +820,16 @@ void down_to_upping(int* shovel_state, int out_Angle1, int out_Angle2){
 // CONTOUR DETECTION
 // -----------------
 
-void dodge_border(){
-    switch_off_lights();
-    GPIO_ResetBits(PORT_LED_TX, PIN_LED_TX);
-    move_backward(speed_max);
-    mDelay(1000);
-    turn_left();
-    mDelay(1000);
+void detectlb(int thresholdLight, unsigned char *leftfield){
+    leftInfraRed(SENSOR, leftfield);
+    if (*leftfield >= thresholdLight){
+        switch_off_lights();
+        GPIO_ResetBits(PORT_LED_TX, PIN_LED_TX);
+        move_backward(speed_max);
+        mDelay(1000);
+        turn_left();
+        mDelay(1000);
+    }
 }
 
 
